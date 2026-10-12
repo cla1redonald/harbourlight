@@ -153,6 +153,20 @@ def _norm(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip().rstrip(".")
 
 
+_EDGE_PUNCT = re.compile(r"^[\"'“”‘’(\[\s]+|[\"'“”‘’)\].,;:!?\s]+$")
+
+
+def _is_approved_line(sentence: str, claim: str) -> bool:
+    """A sentence naming a product passes H2 only if it IS the approved line.
+
+    Equal after normalisation, allowing only quotation marks and punctuation
+    at either end. Containing the line is not enough, or extra claims could
+    ride alongside it.
+    """
+    strip = lambda text: _EDGE_PUNCT.sub("", _norm(text))
+    return strip(sentence) == strip(claim)
+
+
 def _norm_figure(text: str) -> str:
     text = re.sub(r"per\s?cent", "%", text.lower())
     return re.sub(r"\s+", "", text)
@@ -215,7 +229,7 @@ def check_text(
     # H2 and S2: products only by their approved line, and only one of them.
     mentions = products_mentioned(sents, rules)
     for product, sentence in mentions:
-        if _norm(product["claim"]) not in _norm(sentence):
+        if not _is_approved_line(sentence, product["claim"]):
             add("H2", "fail", sentence, f"names {product['name']} outside its approved line")
     distinct = []
     for product, _ in mentions:

@@ -126,6 +126,17 @@ function norm(text: string): string {
   return lowered.replace(/\s+/g, " ").trim().replace(/\.+$/, "");
 }
 
+/**
+ * A sentence that names a product passes H2 only if it IS the approved line:
+ * equal after normalisation, allowing only quotation marks and punctuation at
+ * either end. Containing the line is not enough, or extra claims could ride
+ * alongside it.
+ */
+function isApprovedLine(sentence: string, claim: string): boolean {
+  const strip = (text: string) => norm(text).replace(/^["'“”‘’(\[\s]+|["'“”‘’)\].,;:!?\s]+$/g, "");
+  return strip(sentence) === strip(claim);
+}
+
 function normFigure(text: string): string {
   return text.toLowerCase().replace(/per\s?cent/g, "%").replace(/\s+/g, "");
 }
@@ -187,7 +198,7 @@ export function checkText(text: string, rules: Rules, urls: Set<string>): CheckR
   // H2 and S2
   const mentions = productsMentioned(sents, rules);
   for (const [product, sentence] of mentions) {
-    if (!norm(sentence).includes(norm(product.claim))) {
+    if (!isApprovedLine(sentence, product.claim)) {
       add("H2", "fail", sentence, `names ${product.name} outside its approved line`);
     }
   }

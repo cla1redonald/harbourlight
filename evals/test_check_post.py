@@ -87,6 +87,17 @@ class HardRules(unittest.TestCase):
     def test_h2_clean(self):
         self.assertNoRule(post(FIXED), "H2")
 
+    def test_h2_poison_extra_words_around_the_approved_line(self):
+        # Containing the approved line is not enough: nothing may ride alongside it.
+        self.assertFails(post(FIXED[:-1] + ", and it beats every rival on the market."), "H2",
+                         "beats every rival")
+        self.assertFails(post("Members tell us " + FIXED[0].lower() + FIXED[1:]), "H2",
+                         "Members tell us")
+
+    def test_h2_clean_with_quotes_and_punctuation(self):
+        self.assertNoRule(post('"' + FIXED + '"'), "H2")
+        self.assertNoRule(post(FIXED[:-1] + "!"), "H2")
+
     # H3
     def test_h3_poison_percent(self):
         self.assertFails(post("Around 68% of borrowers plan to fix."), "H3", "68%")
