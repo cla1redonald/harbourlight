@@ -1,0 +1,13 @@
+{
+  "name": "harbourlight",
+  "owner": {
+    "name": "Claire Donald"
+  },
+  "plugins": [
+    {
+      "name": "harbourlight-content",
+      "source": "./",
+      "description": "Governed content pipeline: research, draft, independent compliance review, human approval, audit log."
+    }
+  ]
+}

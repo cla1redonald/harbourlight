@@ -1,0 +1,15 @@
+{
+  "_note": "Committed scores the eval must not fall below. Regenerate with --write-baseline only when a reviewer change is a deliberate improvement.",
+  "reviewer": "standin-rules-v1",
+  "caught": {
+    "H1": 2,
+    "H2": 2,
+    "H3": 2,
+    "H4": 2,
+    "H5": 2,
+    "H6": 1,
+    "H7": 2
+  },
+  "clean_false_positives": 0,
+  "agreement": 15
+}

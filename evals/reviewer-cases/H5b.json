@@ -1,0 +1,12 @@
+{
+  "id": "H5b",
+  "category": "hard",
+  "target_rule": "H5",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H5"
+  ],
+  "evidence_phrase": "Mr Thomson",
+  "notes": "Names a member by title and adds identifying detail.",
+  "post": "# Roof repairs after the storm\n\nAfter the weekend's storm, Mr Thomson, a retired dockyard fitter who lives in Rosyth, told the Kingdom Gazette his roof was patched within two days. He said he had been worried about rain getting into the loft before the repair was done.\n\nThat worry is a common one. If rain is getting in, a temporary cover is fine while you wait for a proper repair, and it is worth keeping receipts for anything you buy to stop the damage spreading.\n\nTake photographs before you tidy up. Insurers usually ask for pictures when a claim is made, and it is far easier to take them on the day than to describe the damage later. Do not climb onto the roof yourself to look.\n\nSources:\n- https://news.example.invalid/kingdom-gazette/2026-09-16-rosyth-roof-repair (Kingdom Gazette, 16 September 2026)\n"
+}

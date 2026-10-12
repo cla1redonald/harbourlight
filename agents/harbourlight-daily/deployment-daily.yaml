@@ -1,0 +1,19 @@
+# Weekdays at 07:00 London time (wall clock, so it follows BST and GMT).
+# Each fired session carries a $1 budget (100 cents) and pauses, not fails, if it hits it.
+# No client is attached when a scheduled run fires: the session waits at its first
+# custom tool call until an orchestrator answers. See docs/design/0005-phase-2b.md.
+name: harbourlight-daily
+agent: ./agent.md
+environment_id: ./environment.yaml
+schedule: {type: cron, expression: "0 7 * * 1-5", timezone: Europe/London}
+budget:
+  type: limit
+  max_list_cost: {amount: "100", currency: USD}
+initial_events:
+  - type: user.message
+    content:
+      - type: text
+        text: |
+          Run today's content draft. Choose one story from get_new_stories, draft one post,
+          check it, queue it for approval if it does not fail, and finish with the
+          morning-after report.

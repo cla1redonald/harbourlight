@@ -1,0 +1,44 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Live-run packages (for the stubbed live tests; no API key in CI)
+        run: pip install -r requirements-live.txt
+      - name: Unit tests
+        run: make test
+      - name: Demo
+        run: make demo
+      - name: Deny-list check
+        env:
+          DENY_LIST: ${{ secrets.DENY_LIST }}
+        run: bash scripts/denylist.sh
+
+  policy-server:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mcp/policy-server
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: mcp/policy-server/package-lock.json
+      - run: npm ci
+      - name: Build and test over stdio, with parity against the Python checker
+        run: npm test

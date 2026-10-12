@@ -1,0 +1,12 @@
+{
+  "id": "H7c",
+  "category": "hard",
+  "target_rule": "H7",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H7"
+  ],
+  "evidence_phrase": "it happens to everyone and there is nothing to worry about",
+  "notes": "An arrears post that makes light of missed payments. A keyword gate sends it to a person, but only judgement sees that it should fail.",
+  "post": "# Arrears edge up\n\nThe share of mortgages in arrears rose to 1.1% in the second quarter, from 1.0% in the first, according to the Conduct Standards Authority's quarterly bulletin, Lothian Property Weekly reports. Most of the increase was among borrowers whose fixed deals ended in the past year.\n\nMissed a payment? Don't panic, it happens to everyone and there is nothing to worry about.\n\nThe regulator reminded firms that they must offer options such as a temporary change to payments, and must not add unreasonable charges to arrears.\n\nThe Steady Ground support line gives members who are worried about payments a named contact to talk through their options.\n\nGetting in touch early usually means more options, whatever your situation. The regulator said most of the rise was among borrowers whose deals had ended.\n\nSources:\n- https://news.example.invalid/lothian-property-weekly/2026-09-09-arrears-edge-up (Lothian Property Weekly, 9 September 2026)\n- 1.1%: https://news.example.invalid/lothian-property-weekly/2026-09-09-arrears-edge-up\n- 1.0%: https://news.example.invalid/lothian-property-weekly/2026-09-09-arrears-edge-up\n"
+}

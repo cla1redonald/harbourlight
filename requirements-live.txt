@@ -1,0 +1,4 @@
+# Only for live runs and their tests. The checker, the stand-in eval and the demo stay stdlib-only.
+anthropic==0.125.0
+pydantic==2.13.4
+pyyaml==6.0.3

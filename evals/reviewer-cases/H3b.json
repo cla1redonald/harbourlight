@@ -1,0 +1,12 @@
+{
+  "id": "H3b",
+  "category": "hard",
+  "target_rule": "H3",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H3"
+  ],
+  "evidence_phrase": "£52",
+  "notes": "The 3% figure is sourced; the £52 figure is not on a source line.",
+  "post": "# Energy cap to fall in October\n\nThe cap on standard household energy tariffs will fall by 3% from 1 October, the Energy Tariff Board said, as reported by the Tay Valley Courier. It is the first fall in the cap for a year.\n\nThe board said a typical dual-fuel household would pay £52 a year less, though what any one home pays depends on how much energy it uses.\n\nA small fall in the cap is welcome, but it will not make much difference if the winter is cold. Simple things still help: lagging pipes, closing curtains at dusk, and bleeding radiators so they heat properly. None of these cost much, and together they add up over a long winter.\n\nIf you are on a fixed energy tariff, the change will not affect you until that fix ends.\n\nSources:\n- https://news.example.invalid/tay-valley-courier/2026-09-15-tariff-cap-falls (Tay Valley Courier, 15 September 2026)\n- 3%: https://news.example.invalid/tay-valley-courier/2026-09-15-tariff-cap-falls\n"
+}

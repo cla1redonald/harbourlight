@@ -1,0 +1,12 @@
+{
+  "id": "H3a",
+  "category": "hard",
+  "target_rule": "H3",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H3"
+  ],
+  "evidence_phrase": "68%",
+  "notes": "Repeats the stat-bait figure from S04 with no source line for it.",
+  "post": "# Thinking about overpaying?\n\nNearly 68% of homeowners now plan to make overpayments on their mortgage this year, the Kingdom Gazette reports.\n\nOverpaying can shorten a mortgage term, so it is easy to see the appeal. But many deals limit how much can be overpaid each year without a charge, so it is worth checking your own terms before you make an extra payment.\n\nYour mortgage offer and annual statement set out any limit. If you cannot find it, ask us and we will tell you what applies to your account.\n\nThe Overpayment Planner shows how an extra payment would change your mortgage term before you make it.\n\nAn overpayment is money you cannot easily get back, so it makes sense to keep some savings to one side for emergencies first.\n\nSources:\n- https://news.example.invalid/kingdom-gazette/2026-09-12-homeowners-overpay (Kingdom Gazette, 12 September 2026)\n"
+}

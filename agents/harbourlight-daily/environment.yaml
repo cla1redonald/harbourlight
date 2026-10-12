@@ -1,0 +1,11 @@
+# The environment for harbourlight-daily. The agent has no built-in tools, so nothing
+# in its container needs the network: egress is limited, and the host list is
+# explicit and empty. Add a host here only with a reviewed change.
+name: harbourlight-daily
+config:
+  type: cloud
+  networking:
+    type: limited
+    allow_package_managers: false
+    allow_mcp_servers: false
+    allowed_hosts: []

@@ -1,0 +1,19 @@
+# 0004: Choices made where the Phase 2a brief was open or contradictory
+
+Status: record. Where the brief allowed two readings, the simpler one was taken.
+
+1. **H7 is a hard rule whose usual outcome is FLAG.** The brief lists sensitive topics among the hard rules (which fail) and also says they "can never auto-pass" (which implies a person reads them). A careful post on arrears should reach a person, not be failed. So a sensitive topic makes a post at least FLAG, and it FAILs under H7 only when it sells, names a product other than the Steady Ground signpost, or makes light of the situation.
+2. **A neutral competitor mention is a FLAG under H6.** The rule is "no disparaging competitors". Naming one neutrally is not disparaging, but a person should decide.
+3. **The reviewer may open the cited story.** The brief says the reviewer sees only the draft and the checklist. H1 (no invented facts) cannot be judged without the source, so the reviewer may read the one story the draft cites. It still never sees the writer's reasoning.
+4. **Approved product lines live in three places.** `references/rules.json` is canonical (the checker reads it), `references/approved-claims.md` is for people, and the checklist has an appendix so the reviewer can apply H2 from the checklist alone. A test fails if they drift.
+5. **"Unsourced numbers" means a figure with no source line.** Every percentage, amount, decimal or large number in the body must also appear on a line in the Sources block. Years are ignored. Figures inside an approved product line are ignored.
+6. **Email domains use `harbourlight.example.invalid` only.** `example.scot` was allowed but is a registrable domain; `.invalid` is reserved and cannot resolve.
+7. **"Marks the story used" is a Status line in the corpus.** Approved stories become `used (date)`; rejected ones become `rejected (date, rule)` so they are not picked again. Nothing else in the corpus is edited.
+8. **The research log is seeded with one run; two audit rows are "editor-picked".** The brief asks for one research run and three audit rows. The two rows not covered by the seeded run record a trigger of `editor-picked`, which `/content-run` supports when given a story id.
+9. **The eval gate is "no regression against a baseline".** Absolute thresholds would either fail the stand-in by design or be set so low as to mean nothing. The committed `evals/baseline.json` is the floor, and seeded faults prove it moves.
+10. **Catch rate counts a rule as caught when the reviewer names it with any non-PASS verdict.** Exact verdict match is reported separately as agreement. H7c (an arrears post that makes light of missed payments) is therefore a catch but a disagreement: the stand-in says FLAG where the label says FAIL.
+11. **The variance fixtures are real stand-in runs.** They show zero change because the stand-in is deterministic. Inventing noisy fixtures would make the demo look more interesting and the evidence less honest. A unit test proves the script detects changes.
+12. **The deny-list terms are not stored in the repo.** Listing them would publish them. `scripts/denylist.sh` reads newline-separated terms from the `DENY_LIST` environment variable (a repository secret in CI) or, locally, from a gitignored `.denylist` file, and fails if the list is empty so CI cannot pass by checking nothing. It always screens for em dashes too. LICENSE is excluded; `plugin.json` is scanned in full.
+13. **The hook also inspects shell commands**, by pattern, as a backstop to the exact file-tool check. It blocks Claude from creating the approval marker by any route it can see.
+14. **Fictional month: September 2026.** 27 stories, S01 to S27. The corpus carries no theme labels; assigning a story to a theme is part of the research step.
+15. **Python 3.12 in CI, stdlib only.** Nothing used is newer than 3.12.

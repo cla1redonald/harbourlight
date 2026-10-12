@@ -1,0 +1,12 @@
+{
+  "id": "H3c",
+  "category": "hard",
+  "target_rule": "H3",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H3"
+  ],
+  "evidence_phrase": "twelve per cent",
+  "notes": "The figure is in the source story but written in words and not on a source line. Digit-based matching misses it.",
+  "post": "# Small leaks, big repairs\n\nEscape-of-water claims in Scotland rose by twelve per cent in the year to June, according to the Home Insurance Claims Panel, Home Matters Scotland reports.\n\nLeaking pipes, failed seals around baths and showers, and burst tanks were the most common causes. The panel said a small leak left for weeks often costs more to fix than a sudden burst, because the damage spreads into floors and ceilings before anyone notices.\n\nA quick look round the house every few months helps. Check under sinks, around the bath and behind the washing machine for damp patches, swollen skirting or a musty smell, and look at the seal round the shower.\n\nCatching a slow leak early is usually a small job. Catching it late rarely is.\n\nSources:\n- https://news.example.invalid/home-matters-scotland/2026-09-14-escape-of-water (Home Matters Scotland, 14 September 2026)\n"
+}

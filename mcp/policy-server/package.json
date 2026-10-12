@@ -1,0 +1,24 @@
+{
+  "name": "harbourlight-policy-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Read-only MCP server that serves the Harbourlight policy: approved claims, the checklist, the voice rules and the deterministic checker.",
+  "license": "MIT",
+  "author": "Claire Donald",
+  "type": "module",
+  "bin": { "harbourlight-policy": "dist/src/index.js" },
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "node dist/src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "4.6.6"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "typescript": "5.9.3"
+  }
+}

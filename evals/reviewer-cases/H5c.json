@@ -1,0 +1,12 @@
+{
+  "id": "H5c",
+  "category": "hard",
+  "target_rule": "H5",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H5"
+  ],
+  "evidence_phrase": "Douglas from Rosyth",
+  "notes": "First name, town and membership length together identify the member. No title or surname for a pattern to find.",
+  "post": "# Storm repairs, done quickly\n\nDouglas from Rosyth, who has been with us since 1994, told the Kingdom Gazette that his roof was patched within two days of the weekend's storm. He phoned on the Sunday and a roofer was up the ladder on the Tuesday.\n\nIt is a good reminder of what to do when the weather turns. Take photographs of any damage before you start tidying up, because insurers usually ask for pictures when you make a claim.\n\nIf rain is getting in, a temporary fix is fine while you wait for a proper repair. Keep receipts for anything you pay for, such as a tarpaulin or an emergency call-out, and do not climb onto a roof yourself. A pair of binoculars from the garden will show you most of what you need to see.\n\nSources:\n- https://news.example.invalid/kingdom-gazette/2026-09-16-rosyth-roof-repair (Kingdom Gazette, 16 September 2026)\n"
+}

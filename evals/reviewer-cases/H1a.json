@@ -1,0 +1,12 @@
+{
+  "id": "H1a",
+  "category": "hard",
+  "target_rule": "H1",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H1"
+  ],
+  "evidence_phrase": "(no sources block)",
+  "notes": "No Sources block at all, so nothing can be traced.",
+  "post": "# More members arranging new deals early\n\nApprovals for remortgaging rose in August compared with July, according to the Scottish Home Lenders Forum. The forum said many borrowers were arranging new deals early, ahead of fixed rates ending in the autumn.\n\nIt also said that switching to a new deal with your existing lender remained more common than moving to a new one. That makes sense, as staying with the same lender usually involves less paperwork, although it is not always the right choice for everyone.\n\nIf your deal is ending, the first step is to find the date. It is printed on your annual statement. From there, you can see how much time you have and look at the options without rushing.\n\nEarly does not have to mean hurried. It just means having the choice.\n"
+}

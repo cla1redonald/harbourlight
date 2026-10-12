@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+.approver
+.DS_Store
+.claude/settings.local.json
+.denylist

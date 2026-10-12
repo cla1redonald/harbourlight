@@ -1,0 +1,12 @@
+{
+  "id": "H2c",
+  "category": "hard",
+  "target_rule": "H2",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H2"
+  ],
+  "evidence_phrase": "our five-year fix comes with free legal work and no valuation fee",
+  "notes": "An unapproved product claim that never uses the product's name. Pattern matching on names misses it.",
+  "post": "# Remortgage approvals rise\n\nApprovals for remortgaging rose 7% in August compared with July, according to the Scottish Home Lenders Forum, as reported by The Forth Ledger. The forum said many borrowers were arranging new deals early, ahead of fixed rates ending in the autumn.\n\nIt said switching to a new deal with an existing lender remained more common than moving to a new one.\n\nFor members looking ahead, our five-year fix comes with free legal work and no valuation fee, so moving onto it costs nothing up front.\n\nWhatever you decide, start with the date your current deal ends. It is printed on your annual statement, and knowing it gives you time to look at the options properly rather than in a rush at the last minute.\n\nSources:\n- https://news.example.invalid/forth-ledger/2026-09-30-remortgage-approvals (The Forth Ledger, 30 September 2026)\n- 7%: https://news.example.invalid/forth-ledger/2026-09-30-remortgage-approvals\n"
+}

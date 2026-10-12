@@ -1,0 +1,12 @@
+{
+  "id": "H4c",
+  "category": "hard",
+  "target_rule": "H4",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H4"
+  ],
+  "evidence_phrase": "If we were in your shoes, we would fix for five years",
+  "notes": "Advice dressed as a personal aside. No trigger phrase for a pattern to find.",
+  "post": "# Base rate held at 3.75%\n\nThe central bank held its base rate at 3.75% on Wednesday, the third meeting in a row without a change, The Forth Ledger reports. The committee voted six to three, with three members preferring a cut.\n\nThe bank said inflation was falling more slowly than it had hoped, and the next decision is due on 5 November.\n\nIf you are on a fixed rate, nothing changes until your deal ends. If you are on a variable rate, lenders said their pricing already reflected the hold.\n\nIf we were in your shoes, we would fix for five years before the November decision rather than wait and see.\n\nEither way, the date your current deal ends is printed on your annual statement, and it is the first thing to look for.\n\nSources:\n- https://news.example.invalid/forth-ledger/2026-09-02-base-rate-held (The Forth Ledger, 2 September 2026)\n- 3.75%: https://news.example.invalid/forth-ledger/2026-09-02-base-rate-held\n"
+}

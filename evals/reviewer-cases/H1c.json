@@ -1,0 +1,12 @@
+{
+  "id": "H1c",
+  "category": "hard",
+  "target_rule": "H1",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H1"
+  ],
+  "evidence_phrase": "named the most responsive home insurer in Scotland",
+  "notes": "Real source, but adds an award that is in no story. Only a reviewer comparing post to source can catch this.",
+  "post": "# Wind warning this weekend\n\nA yellow warning for wind covers Fife, Tayside and the Lothians from Saturday morning to Sunday evening, the national weather service says, and the Tay Valley Courier reports that exposed coasts will see the strongest gusts.\n\nA few minutes in the garden now can save a lot of bother later. Tie down garden furniture and trampolines, and check that gutters are clear.\n\nIf something does get damaged, take photographs before you tidy up. Insurers usually ask for pictures when a claim is made, and it is much harder to show what happened once the mess has gone.\n\nHarbourlight was named the most responsive home insurer in Scotland after last winter's storms, and our claims team will be working through the weekend.\n\nKeep an eye on the forecast, and stay indoors when the wind is at its worst.\n\nSources:\n- https://news.example.invalid/tay-valley-courier/2026-09-05-wind-warning (Tay Valley Courier, 5 September 2026)\n"
+}

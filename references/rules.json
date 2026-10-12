@@ -1,0 +1,89 @@
+{
+  "voice_version": 1,
+  "word_count": {"min": 120, "max": 220},
+  "products": [
+    {
+      "name": "FixedFive Remortgage",
+      "aliases": ["FixedFive"],
+      "claim": "The FixedFive Remortgage fixes your monthly payment for five years.",
+      "signpost": false
+    },
+    {
+      "name": "Overpayment Planner",
+      "aliases": ["Overpayment Planner"],
+      "claim": "The Overpayment Planner shows how an extra payment would change your mortgage term before you make it.",
+      "signpost": false
+    },
+    {
+      "name": "HomeAssist Emergency Cover",
+      "aliases": ["HomeAssist"],
+      "claim": "HomeAssist Emergency Cover is an optional add-on to our home insurance that arranges help with emergencies such as a burst pipe or a broken boiler.",
+      "signpost": false
+    },
+    {
+      "name": "Steady Ground support line",
+      "aliases": ["Steady Ground"],
+      "claim": "The Steady Ground support line gives members who are worried about payments a named contact to talk through their options.",
+      "signpost": true
+    },
+    {
+      "name": "Harbour App",
+      "aliases": ["Harbour App"],
+      "claim": "The Harbour App lets members check their balance, make overpayments and update their details.",
+      "signpost": false
+    }
+  ],
+  "competitors": [
+    "Northwynd Building Society",
+    "Northwynd",
+    "Calderbank Home Loans",
+    "Calderbank",
+    "Kinnaird Mutual",
+    "Kinnaird",
+    "Firthmoor Bank",
+    "Firthmoor",
+    "Lomondale Direct",
+    "Lomondale"
+  ],
+  "disparaging_words": [
+    "breach", "breached", "hack", "hacked", "leak", "leaked", "fail", "failed", "failing",
+    "fined", "scandal", "careless", "unlike", "worse", "worst", "avoid", "shambles", "mess",
+    "embarrassing", "chaos", "incompetent", "let down", "can't be trusted", "cannot be trusted"
+  ],
+  "advice_phrases": [
+    "guarantee", "guaranteed", "guarantees", "risk-free", "risk free", "you should",
+    "we recommend", "we'd recommend", "we would recommend", "now is the time", "best time to",
+    "lock in", "will save you", "you will save", "you'll save", "can't go wrong",
+    "cannot lose", "can't lose", "no risk", "certain to", "we promise"
+  ],
+  "sensitive_patterns": [
+    "arrears", "missed payment", "missed a payment", "behind on", "repossess", "bereave",
+    "death", "died", "funeral", "probate", "widow", "grief", "grieving", "vulnerab",
+    "scam", "fraud", "debt", "struggling", "hardship", "terminal", "dementia", "eviction",
+    "mental health", "suicide"
+  ],
+  "h7_fail_phrases": [
+    "great news", "don't miss", "sign up", "exclusive", "limited time", "special offer",
+    "why not", "treat yourself", "act now", "apply today"
+  ],
+  "ai_words": [
+    "leverage", "synergy", "synergise", "synergize", "cutting-edge", "game-changer",
+    "game changer", "delve", "unlock", "seamless", "seamlessly", "revolutionise",
+    "revolutionize", "elevate", "empower", "harness", "robust", "tapestry", "fast-paced",
+    "world-class", "holistic"
+  ],
+  "hype_phrases": [
+    "unbeatable", "no-brainer", "no brainer", "once-in-a-lifetime", "once in a lifetime",
+    "best ever", "nothing to worry about", "no catch", "never been easier", "the only mutual"
+  ],
+  "american_spellings": {
+    "color": "colour", "colors": "colours", "favorite": "favourite", "favor": "favour",
+    "organization": "organisation", "organize": "organise", "organized": "organised",
+    "realize": "realise", "realized": "realised", "analyze": "analyse", "center": "centre",
+    "behavior": "behaviour", "honor": "honour", "neighbor": "neighbour",
+    "neighborhood": "neighbourhood", "apologize": "apologise", "prioritize": "prioritise",
+    "recognize": "recognise", "catalog": "catalogue", "defense": "defence",
+    "theater": "theatre", "traveling": "travelling", "mold": "mould", "moldy": "mouldy",
+    "labor": "labour", "savior": "saviour", "utilize": "utilise", "fulfill": "fulfil"
+  }
+}

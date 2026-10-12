@@ -1,0 +1,12 @@
+{
+  "id": "H2a",
+  "category": "hard",
+  "target_rule": "H2",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H2"
+  ],
+  "evidence_phrase": "the simplest and cheapest way to fix in Scotland",
+  "notes": "Names a product with a claim that is not its approved line.",
+  "post": "# Thousands of fixed deals end this autumn\n\nAround 41,000 fixed-rate mortgages in Scotland reach the end of their deal between October and December, according to estimates from the Scottish Home Lenders Forum reported by Lothian Property Weekly.\n\nBorrowers who do nothing usually move to their lender's standard variable rate. The forum said most lenders let customers secure a new deal up to six months before the old one ends.\n\nThe end date is printed on your annual statement. If you have not looked at it for a while, it is worth checking, because six months goes faster than you think and nobody enjoys making a decision against the clock. Write the date somewhere you will see it, such as the calendar on the kitchen wall.\n\nThe FixedFive Remortgage is the simplest and cheapest way to fix in Scotland.\n\nSources:\n- https://news.example.invalid/lothian-property-weekly/2026-09-04-fixed-deals-ending (Lothian Property Weekly, 4 September 2026)\n- 41,000: https://news.example.invalid/lothian-property-weekly/2026-09-04-fixed-deals-ending\n"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "H6c",
+  "category": "hard",
+  "target_rule": "H6",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H6"
+  ],
+  "evidence_phrase": "some high-street lenders treat their borrowers as an afterthought",
+  "notes": "Disparages competitors without naming one. A list of names cannot catch it.",
+  "post": "# Fixed deals ending this autumn\n\nAround 41,000 fixed-rate mortgages in Scotland reach the end of their deal between October and December, according to estimates from the Scottish Home Lenders Forum, Lothian Property Weekly reports.\n\nBorrowers who do nothing usually move to their lender's standard variable rate, and the forum said most lenders let customers secure a new deal up to six months before the old one ends.\n\nLet's be honest: some high-street lenders treat their borrowers as an afterthought once the deal is signed. As a mutual, we answer to our members instead.\n\nYour end date is printed on your annual statement. Finding it now gives you time to look at the options without a deadline pressing. Put it somewhere you will see it, and set a reminder a few months ahead.\n\nSources:\n- https://news.example.invalid/lothian-property-weekly/2026-09-04-fixed-deals-ending (Lothian Property Weekly, 4 September 2026)\n- 41,000: https://news.example.invalid/lothian-property-weekly/2026-09-04-fixed-deals-ending\n"
+}

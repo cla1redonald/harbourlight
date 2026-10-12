@@ -1,0 +1,12 @@
+{
+  "id": "H4a",
+  "category": "hard",
+  "target_rule": "H4",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H4"
+  ],
+  "evidence_phrase": "guaranteed to save you money",
+  "notes": "A guarantee about a financial outcome.",
+  "post": "# Five-year fixes are getting cheaper\n\nThe average five-year fixed mortgage rate fell to 4.49% this week from 4.62% a month ago, according to Ratewatch Data, the Clyde Money Review reports. Two-year fixes fell by less.\n\nRatewatch said the cuts were small and uneven, and that the average hides a wide spread between deals for borrowers with large deposits and those with small ones.\n\nThat spread matters, but the direction is clear. Fixing for five years now is guaranteed to save you money compared with waiting, because rates only move one way once they start to fall.\n\nYour annual statement shows when your current deal ends, which is the first thing to check. Once you know the date, you can see how much time you have, and you can look at the options before anything changes on your account.\n\nSources:\n- https://news.example.invalid/clyde-money-review/2026-09-10-five-year-fixes-trimmed (Clyde Money Review, 10 September 2026)\n- 4.49% and 4.62%: https://news.example.invalid/clyde-money-review/2026-09-10-five-year-fixes-trimmed\n"
+}

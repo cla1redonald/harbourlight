@@ -1,0 +1,386 @@
+{
+  "reviewer": "standin-rules-v1",
+  "voice_version": 1,
+  "seeded_faults": [],
+  "created": "2026-10-11T21:42:54Z",
+  "results": {
+    "B01": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FLAG",
+      "needs_human": true,
+      "rules": [
+        "H7"
+      ],
+      "findings": [
+        {
+          "rule": "H7",
+          "severity": "flag",
+          "quote": "If your boiler is already struggling to heat the house on a cool evening, that is worth mentioning to the engineer when you book.",
+          "why": "sensitive topic ('struggling'): a person must read this"
+        }
+      ],
+      "what_would_change": []
+    },
+    "B02": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FLAG",
+      "needs_human": true,
+      "rules": [
+        "H6",
+        "H7"
+      ],
+      "findings": [
+        {
+          "rule": "H6",
+          "severity": "flag",
+          "quote": "Firthmoor Bank has confirmed that names, addresses and mortgage account numbers of some of its customers were exposed after a supplier's system was accessed without permission, the Clyde Money Review reports.",
+          "why": "names a competitor; approver to confirm it is neutral"
+        },
+        {
+          "rule": "H7",
+          "severity": "flag",
+          "quote": "This is a reminder about how scams work rather than a cause for alarm.",
+          "why": "sensitive topic ('scams'): a person must read this"
+        }
+      ],
+      "what_would_change": []
+    },
+    "C01": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "PASS",
+      "needs_human": false,
+      "rules": [],
+      "findings": [],
+      "what_would_change": []
+    },
+    "C02": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "PASS",
+      "needs_human": false,
+      "rules": [],
+      "findings": [],
+      "what_would_change": []
+    },
+    "H1a": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1"
+      ],
+      "findings": [
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "(no sources block)",
+          "why": "nothing in the post can be traced to a story"
+        }
+      ],
+      "what_would_change": [
+        "H1: cite the story this comes from, or cut the statement (\"(no sources block)\")"
+      ]
+    },
+    "H1b": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1"
+      ],
+      "findings": [
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "https://news.example.invalid/energy-tariff-board/press/2026-09-cap-falls",
+          "why": "cited source is not a story in the corpus"
+        }
+      ],
+      "what_would_change": [
+        "H1: cite the story this comes from, or cut the statement (\"https://news.example.invalid/energy-tariff-board/press/2026-09-cap-falls\")"
+      ]
+    },
+    "H1c": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "PASS",
+      "needs_human": false,
+      "rules": [],
+      "findings": [],
+      "what_would_change": []
+    },
+    "H2a": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H2"
+      ],
+      "findings": [
+        {
+          "rule": "H2",
+          "severity": "fail",
+          "quote": "The FixedFive Remortgage is the simplest and cheapest way to fix in Scotland.",
+          "why": "names FixedFive Remortgage outside its approved line"
+        }
+      ],
+      "what_would_change": [
+        "H2: use the product's approved line word for word, or drop the product (\"The FixedFive Remortgage is the simplest and cheapest way to fix in Scotland.\")"
+      ]
+    },
+    "H2b": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H2"
+      ],
+      "findings": [
+        {
+          "rule": "H2",
+          "severity": "fail",
+          "quote": "If the worst does happen, HomeAssist Emergency Cover is the best emergency cover in Scotland.",
+          "why": "names HomeAssist Emergency Cover outside its approved line"
+        }
+      ],
+      "what_would_change": [
+        "H2: use the product's approved line word for word, or drop the product (\"If the worst does happen, HomeAssist Emergency Cover is the best emergency co...\")"
+      ]
+    },
+    "H2c": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "PASS",
+      "needs_human": false,
+      "rules": [],
+      "findings": [],
+      "what_would_change": []
+    },
+    "H3a": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H3"
+      ],
+      "findings": [
+        {
+          "rule": "H3",
+          "severity": "fail",
+          "quote": "68%",
+          "why": "figure has no source line"
+        }
+      ],
+      "what_would_change": [
+        "H3: put the figure on a source line with where it came from, or cut it (\"68%\")"
+      ]
+    },
+    "H3b": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H3"
+      ],
+      "findings": [
+        {
+          "rule": "H3",
+          "severity": "fail",
+          "quote": "£52",
+          "why": "figure has no source line"
+        }
+      ],
+      "what_would_change": [
+        "H3: put the figure on a source line with where it came from, or cut it (\"£52\")"
+      ]
+    },
+    "H3c": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "PASS",
+      "needs_human": false,
+      "rules": [],
+      "findings": [],
+      "what_would_change": []
+    },
+    "H4a": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H4"
+      ],
+      "findings": [
+        {
+          "rule": "H4",
+          "severity": "fail",
+          "quote": "Fixing for five years now is guaranteed to save you money compared with waiting, because rates only move one way once they start to fall.",
+          "why": "advice or promise: 'guaranteed'"
+        }
+      ],
+      "what_would_change": [
+        "H4: describe the options without telling the reader what to do or promising an outcome (\"Fixing for five years now is guaranteed to save you money compared with waiti...\")"
+      ]
+    },
+    "H4b": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H4"
+      ],
+      "findings": [
+        {
+          "rule": "H4",
+          "severity": "fail",
+          "quote": "We recommend that every member whose deal ends this year arranges a new one now, before the queue gets longer.",
+          "why": "advice or promise: 'We recommend'"
+        }
+      ],
+      "what_would_change": [
+        "H4: describe the options without telling the reader what to do or promising an outcome (\"We recommend that every member whose deal ends this year arranges a new one n...\")"
+      ]
+    },
+    "H4c": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "PASS",
+      "needs_human": false,
+      "rules": [],
+      "findings": [],
+      "what_would_change": []
+    },
+    "H5a": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H5"
+      ],
+      "findings": [
+        {
+          "rule": "H5",
+          "severity": "fail",
+          "quote": "Douglas Thomson, a member",
+          "why": "identifies an individual customer or member"
+        }
+      ],
+      "what_would_change": [
+        "H5: remove the name and any detail that could identify the person (\"Douglas Thomson, a member\")"
+      ]
+    },
+    "H5b": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H5"
+      ],
+      "findings": [
+        {
+          "rule": "H5",
+          "severity": "fail",
+          "quote": "Mr Thomson",
+          "why": "identifies an individual customer or member"
+        }
+      ],
+      "what_would_change": [
+        "H5: remove the name and any detail that could identify the person (\"Mr Thomson\")"
+      ]
+    },
+    "H5c": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "PASS",
+      "needs_human": false,
+      "rules": [],
+      "findings": [],
+      "what_would_change": []
+    },
+    "H6a": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H6"
+      ],
+      "findings": [
+        {
+          "rule": "H6",
+          "severity": "fail",
+          "quote": "Firthmoor Bank's careless handling of its customers' data has left names, addresses and mortgage account numbers exposed, the Clyde Money Review reports.",
+          "why": "criticises a competitor: 'careless'"
+        }
+      ],
+      "what_would_change": [
+        "H6: remove the comment about the other firm (\"Firthmoor Bank's careless handling of its customers' data has left names, add...\")"
+      ]
+    },
+    "H6c": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "PASS",
+      "needs_human": false,
+      "rules": [],
+      "findings": [],
+      "what_would_change": []
+    },
+    "H7a": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FAIL",
+      "needs_human": true,
+      "rules": [
+        "H7"
+      ],
+      "findings": [
+        {
+          "rule": "H7",
+          "severity": "flag",
+          "quote": "The association said lenders can usually pause or reduce payments while an estate is settled, but only if they are told about the death.",
+          "why": "sensitive topic ('death'): a person must read this"
+        },
+        {
+          "rule": "H7",
+          "severity": "fail",
+          "quote": "HomeAssist Emergency Cover is an optional add-on to our home insurance that arranges help with emergencies such as a burst pipe or a broken boiler.",
+          "why": "sells HomeAssist Emergency Cover in a post about a sensitive topic"
+        },
+        {
+          "rule": "H7",
+          "severity": "fail",
+          "quote": "An empty house also needs looking after while the paperwork goes through, so why not let us take one worry off your plate.",
+          "why": "promotional framing on a sensitive topic: 'why not'"
+        }
+      ],
+      "what_would_change": [
+        "H7: remove the product or the light-hearted framing; only the Steady Ground line may appear (\"HomeAssist Emergency Cover is an optional add-on to our home insurance that a...\")",
+        "H7: remove the product or the light-hearted framing; only the Steady Ground line may appear (\"An empty house also needs looking after while the paperwork goes through, so ...\")"
+      ]
+    },
+    "H7b": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "PASS",
+      "needs_human": false,
+      "rules": [],
+      "findings": [],
+      "what_would_change": []
+    },
+    "H7c": {
+      "reviewer": "standin-rules-v1",
+      "verdict": "FLAG",
+      "needs_human": true,
+      "rules": [
+        "H7",
+        "S3"
+      ],
+      "findings": [
+        {
+          "rule": "H7",
+          "severity": "flag",
+          "quote": "Arrears edge up",
+          "why": "sensitive topic ('Arrears'): a person must read this"
+        },
+        {
+          "rule": "S3",
+          "severity": "flag",
+          "quote": "nothing to worry about",
+          "why": "hype or absolute claim"
+        }
+      ],
+      "what_would_change": []
+    }
+  }
+}

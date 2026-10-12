@@ -1,0 +1,11 @@
+{
+  "name": "harbourlight-content",
+  "version": "0.2.0",
+  "description": "A governed content pipeline for a regulated company: research, draft, independent compliance review with quoted evidence, a human approval step and an append-only audit log. Fictional company; runnable demo.",
+  "author": {
+    "name": "Claire Donald"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/cla1redonald/harbourlight",
+  "keywords": ["compliance", "content", "governance", "cowork", "audit", "evals"]
+}

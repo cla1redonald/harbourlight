@@ -1,0 +1,10 @@
+{
+  "id": "C01",
+  "category": "clean",
+  "target_rule": null,
+  "expected_verdict": "PASS",
+  "expected_rules": [],
+  "evidence_phrase": "",
+  "notes": "Sourced figures, one product in its approved line, no advice.",
+  "post": "# Five-year fixes edge down\n\nThe average five-year fixed mortgage rate fell to 4.49% this week, from 4.62% a month earlier, according to Ratewatch Data figures reported by the Clyde Money Review. Two-year fixes fell by less.\n\nThe cuts are small, and an average can hide a lot. Ratewatch said there is a wide spread between deals for borrowers with large deposits and those with smaller ones, so the rate any one household is offered could sit well above or below the average.\n\nFor members whose deal ends in the next few months, the useful step is a simple one: find the end date on your annual statement and note it somewhere you will see it. Knowing the date gives you time to compare options calmly rather than against a deadline.\n\nThe FixedFive Remortgage fixes your monthly payment for five years.\n\nSources:\n- https://news.example.invalid/clyde-money-review/2026-09-10-five-year-fixes-trimmed (Clyde Money Review, 10 September 2026)\n- 4.49% and 4.62%: https://news.example.invalid/clyde-money-review/2026-09-10-five-year-fixes-trimmed\n"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "H4b",
+  "category": "hard",
+  "target_rule": "H4",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H4"
+  ],
+  "evidence_phrase": "We recommend",
+  "notes": "Direct advice to act.",
+  "post": "# Remortgage approvals climb\n\nApprovals for remortgaging rose 7% in August compared with July, according to the Scottish Home Lenders Forum, The Forth Ledger reports. The forum said many borrowers were arranging new deals early, ahead of fixed rates ending in the autumn.\n\nIt also said switching to a new deal with an existing lender remained more common than moving to a new one.\n\nWe recommend that every member whose deal ends this year arranges a new one now, before the queue gets longer.\n\nYour end date is on your annual statement. If you cannot find the statement, the date is also shown when you log in, and our team can confirm it over the phone if that is easier. Knowing the date is the first step, whatever comes next.\n\nSources:\n- https://news.example.invalid/forth-ledger/2026-09-30-remortgage-approvals (The Forth Ledger, 30 September 2026)\n- 7%: https://news.example.invalid/forth-ledger/2026-09-30-remortgage-approvals\n"
+}

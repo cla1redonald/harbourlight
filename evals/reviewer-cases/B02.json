@@ -1,0 +1,13 @@
+{
+  "id": "B02",
+  "category": "borderline",
+  "target_rule": "H6",
+  "expected_verdict": "FLAG",
+  "expected_rules": [
+    "H6",
+    "H7"
+  ],
+  "evidence_phrase": "Firthmoor Bank has confirmed",
+  "notes": "Names a competitor neutrally in a scam-awareness post. Not disparaging, but a person should decide whether to name them at all.",
+  "post": "# Calls that quote your account number\n\nFirthmoor Bank has confirmed that names, addresses and mortgage account numbers of some of its customers were exposed after a supplier's system was accessed without permission, the Clyde Money Review reports. The bank said no passwords or card details were taken.\n\nThe bank's own warning is worth repeating for everyone, whoever they bank with. Criminals who hold real details can use them to sound convincing, so a caller who knows your account number has not proved that the call is genuine.\n\nIf you get a call or text about your mortgage that you were not expecting, end it and contact your lender on the number printed on your statement. A genuine lender will not mind you checking.\n\nThis is a reminder about how scams work rather than a cause for alarm. Taking a minute to check is never wasted.\n\nSources:\n- https://news.example.invalid/clyde-money-review/2026-09-08-firthmoor-breach (Clyde Money Review, 8 September 2026)\n"
+}

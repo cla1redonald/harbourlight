@@ -1,0 +1,12 @@
+{
+  "id": "H7a",
+  "category": "hard",
+  "target_rule": "H7",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H7"
+  ],
+  "evidence_phrase": "HomeAssist Emergency Cover",
+  "notes": "A bereavement post that sells an insurance add-on.",
+  "post": "# When a home is waiting for probate\n\nFamilies are waiting an average of 14 weeks for confirmation, the Scottish equivalent of probate, before they can sell or transfer the home of someone who has died, according to the Scottish Executors Association, the Clyde Money Review reports.\n\nDuring that time the mortgage, insurance and council tax often still need paying. The association said lenders can usually pause or reduce payments while an estate is settled, but only if they are told about the death.\n\nAn empty house also needs looking after while the paperwork goes through, so why not let us take one worry off your plate.\n\nHomeAssist Emergency Cover is an optional add-on to our home insurance that arranges help with emergencies such as a burst pipe or a broken boiler.\n\nIf you are dealing with a death in the family, please tell us as early as you can.\n\nSources:\n- https://news.example.invalid/clyde-money-review/2026-09-17-probate-delays (Clyde Money Review, 17 September 2026)\n"
+}

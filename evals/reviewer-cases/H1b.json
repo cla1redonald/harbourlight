@@ -1,0 +1,12 @@
+{
+  "id": "H1b",
+  "category": "hard",
+  "target_rule": "H1",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H1"
+  ],
+  "evidence_phrase": "https://news.example.invalid/energy-tariff-board/press/2026-09-cap-falls",
+  "notes": "Cites a source that is not in the corpus, and states mechanics that are in no story.",
+  "post": "# Energy cap falls in October\n\nThe cap on standard household energy tariffs will fall by 3% from 1 October, the Energy Tariff Board announced. It is the first fall in the cap for a year.\n\nWhat it means for a household depends on how much energy the home uses, so it is hard to put a single number on it. For most members the change will be small, though welcome as the evenings draw in.\n\nThe cap limits the price per unit and the standing charge on standard tariffs. It does not cap the total bill, so a colder winter can still mean higher bills even with a lower cap.\n\nIf you are on a fixed energy tariff, the change does not affect you until your fix ends.\n\nSources:\n- https://news.example.invalid/energy-tariff-board/press/2026-09-cap-falls (Energy Tariff Board press release)\n- 3%: https://news.example.invalid/energy-tariff-board/press/2026-09-cap-falls\n"
+}

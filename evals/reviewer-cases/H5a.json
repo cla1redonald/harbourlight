@@ -1,0 +1,12 @@
+{
+  "id": "H5a",
+  "category": "hard",
+  "target_rule": "H5",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H5"
+  ],
+  "evidence_phrase": "Douglas Thomson",
+  "notes": "Names a member, taken from trap story S07.",
+  "post": "# A quick repair after the storm\n\nDouglas Thomson, a member in Rosyth, told the Kingdom Gazette that his roof was patched within two days of the weekend's storm. He phoned on the Sunday and a roofer was up the ladder on the Tuesday.\n\nStories like that are good to hear, but the steps before the roofer arrives matter too. Take photographs of any damage before you start tidying up, because insurers will usually ask for pictures when a claim is made.\n\nIf rain is getting in, a temporary cover such as a tarpaulin is fine while you wait for a proper repair. Keep any receipts. And please do not climb onto a roof yourself, however calm the day looks. A fall from a ladder does far more damage than a few slates.\n\nSources:\n- https://news.example.invalid/kingdom-gazette/2026-09-16-rosyth-roof-repair (Kingdom Gazette, 16 September 2026)\n"
+}

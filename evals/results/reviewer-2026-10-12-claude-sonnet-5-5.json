@@ -1,0 +1,1238 @@
+{
+  "reviewer": "claude-sonnet-5-5",
+  "model": "claude-sonnet-5-5",
+  "effort": "high",
+  "voice_version": 1,
+  "seeded_faults": [],
+  "created": "2026-10-12T09:47:54Z",
+  "results": {
+    "B01": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1"
+      ],
+      "findings": [
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "it is reasonable to ask to see their card when they arrive",
+          "why": "The cited story says nothing about engineers carrying a card to show, so this adds a fact that is not in the source."
+        }
+      ],
+      "what_would_change": [
+        "H1: remove the reference to engineers carrying a card, or limit the sentence to what the story says (guild members must be on the gas safety register)."
+      ],
+      "summary": "FAIL on one hard rule (H1).\nThe post says engineers have a card to show on arrival. The cited story does not say that.\nEverything else matches the story: the guild's advice, the leak and carbon monoxide checks, the breakdown risk, and the register.\nNo figures, products, named people, competitors or sensitive topics. Body is about 144 words, and spelling and tone are fine.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8DyfeEsWvpMRY8a7aP",
+      "usage": {
+        "input_tokens": 529,
+        "output_tokens": 2005,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 3977
+      },
+      "cost_usd": 0.0310505,
+      "cost_estimated": false,
+      "latency_s": 13.227
+    },
+    "B02": {
+      "verdict": "FAIL",
+      "needs_human": true,
+      "rules": [
+        "H1",
+        "H7",
+        "S3"
+      ],
+      "findings": [
+        {
+          "rule": "H7",
+          "severity": "fail",
+          "quote": "This is a reminder about how scams work rather than a cause for alarm.",
+          "why": "The post is about scams and a data breach, and it plays down the situation by saying it is not a cause for alarm."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "A genuine lender will not mind you checking.",
+          "why": "This claim about how lenders behave is not in the cited Clyde Money Review story."
+        },
+        {
+          "rule": "S3",
+          "severity": "flag",
+          "quote": "Taking a minute to check is never wasted.",
+          "why": "This is an absolute statement and reassuring framing, which breaks the honest-framing rule."
+        }
+      ],
+      "what_would_change": [
+        "H7: remove the line that plays down the breach and scam risk, and treat it with care without reassurance. Any help signpost may only be the Steady Ground line.",
+        "H1: remove the claim about lenders not minding checks, or keep only statements found in the cited story."
+      ],
+      "summary": "FAIL: sensitive topic (data breach and scam risk) handled in a way that plays it down.\nH7: 'rather than a cause for alarm' dismisses the situation.\nH1: 'A genuine lender will not mind you checking.' is not in the cited story.\nS3 flag: 'never wasted' is an absolute.\nNo figures, no product mentions and no named customers. Body is about 139 words and the sources block is present.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8Ex6fWhAJKGiNt2TNU",
+      "usage": {
+        "input_tokens": 555,
+        "output_tokens": 1949,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0213954,
+      "cost_estimated": false,
+      "latency_s": 12.952
+    },
+    "C01": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1"
+      ],
+      "findings": [
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "find the end date on your annual statement and note it somewhere you will see it",
+          "why": "Says the deal end date is on an annual statement, a fact about member documents that is not in the cited story."
+        }
+      ],
+      "what_would_change": [
+        "H1: remove the claim that the end date is on an annual statement, or point members to where they can find the date without stating a fact the cited story does not support."
+      ],
+      "summary": "FAIL on H1: the draft says the deal end date is on the member's annual statement, which the cited story does not say.\nThe rates (4.49%, 4.62%), the Ratewatch attribution and the two-year comparison all match the story, and both figures are on a source line.\nThe FixedFive line is the approved wording, and it is the only product mention.\nNo soft-rule findings: the body is about 136 words, the spelling is British, and there are no exclamation marks, em dashes or hype.\nNot a sensitive topic.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8FuVfgNAUvX4xmtTeP",
+      "usage": {
+        "input_tokens": 611,
+        "output_tokens": 2005,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0220674,
+      "cost_estimated": false,
+      "latency_s": 13.453
+    },
+    "C02": {
+      "verdict": "PASS",
+      "needs_human": false,
+      "rules": [],
+      "findings": [],
+      "what_would_change": [],
+      "summary": "No hard or soft rule failures found.\nFacts match the cited story: pipe lagging, heating on low, stopcock.\nThe only product line is HomeAssist Emergency Cover, word for word, and it is the only product mentioned.\nBody is about 150 words, with no figures, names, exclamation marks, em dashes or American spellings.\nNo sensitive topic. The Sources block has the story URL.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8Gu7sbonainiz1TULL",
+      "usage": {
+        "input_tokens": 553,
+        "output_tokens": 1799,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0198914,
+      "cost_estimated": false,
+      "latency_s": 13.043
+    },
+    "H1a": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1"
+      ],
+      "findings": [
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "(no sources block)",
+          "why": "The draft has no Sources block and no cited story, so none of its facts can be traced to a source."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "Approvals for remortgaging rose in August compared with July, according to the Scottish Home Lenders Forum.",
+          "why": "This is a factual claim attributed to a named body, with no cited story to check it against."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "It is printed on your annual statement.",
+          "why": "This is a factual claim about Harbourlight documents that no cited source supports."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "staying with the same lender usually involves less paperwork",
+          "why": "This is a general factual claim with no source behind it."
+        }
+      ],
+      "what_would_change": [
+        "H1: add a Sources block with a real URL for a story in the corpus, and keep only statements that story supports (the August approvals claim, the forum's comments, the paperwork point and the annual statement point), or remove them."
+      ],
+      "summary": "FAIL on H1: there is no Sources block and no cited story to check against.\nThe August approvals claim, the lender-switching comments, the paperwork point and the annual statement point are all unverified.\nNo other rule failed: no figures, products, named people, competitor criticism or sensitive topic.\nBody is about 129 words, so length is fine.\nThe writer must add a real source and keep only what it supports.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8HrokJc5axu2kQh45K",
+      "usage": {
+        "input_tokens": 269,
+        "output_tokens": 1875,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0200834,
+      "cost_estimated": false,
+      "latency_s": 12.322
+    },
+    "H1b": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1"
+      ],
+      "findings": [
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "https://news.example.invalid/energy-tariff-board/press/2026-09-cap-falls (Energy Tariff Board press release)",
+          "why": "The only cited source URL matches no story in the corpus, so none of the facts in the post can be checked."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "For most members the change will be small, though welcome as the evenings draw in.",
+          "why": "This claim about members is not supported by any checkable source and reads as an invented fact or prediction."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "If you are on a fixed energy tariff, the change does not affect you until your fix ends.",
+          "why": "This factual statement cannot be verified against any cited story."
+        }
+      ],
+      "what_would_change": [
+        "H1: cite a source URL that exists in the story corpus, and make sure every factual statement (the 3% fall, the 1 October date, 'first fall in a year', the fixed-tariff point) appears in that story. Remove or soften the claims about the change being small for most members."
+      ],
+      "summary": "FAIL on H1: the cited URL matches no story, so the facts cannot be verified.\nThe claims that the change will be small for most members and that fixed tariffs are unaffected are unsupported.\nNo product, competitor, named person or advice problems were found, and the topic is not sensitive.\nThe 3% figure is on a source line, but that line points to the same missing URL.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8JmS5XUydwuUH56SiP",
+      "usage": {
+        "input_tokens": 370,
+        "output_tokens": 1534,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0168754,
+      "cost_estimated": false,
+      "latency_s": 10.047
+    },
+    "H1c": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1",
+        "S3"
+      ],
+      "findings": [
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "Harbourlight was named the most responsive home insurer in Scotland after last winter's storms",
+          "why": "The award and the storms are not in the cited story, which only covers the wind warning and general advice."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "our claims team will be working through the weekend",
+          "why": "A claim about Harbourlight's operations that the cited story does not support."
+        },
+        {
+          "rule": "S3",
+          "severity": "flag",
+          "quote": "the most responsive home insurer in Scotland",
+          "why": "A superlative self-promotional claim, which is hype under the honest-framing rule."
+        }
+      ],
+      "what_would_change": [
+        "H1: remove the sentence claiming Harbourlight was named the most responsive home insurer and the claim about the claims team working through the weekend, or support them with a real cited source. Keep the post to facts in the Tay Valley Courier story."
+      ],
+      "summary": "FAIL: one hard-rule breach (H1).\nThe fourth paragraph states an award and weekend staffing that are not in the cited story.\nThe same sentence also reads as self-promotion (S3 flag).\nThe weather facts and the advice on gutters, furniture and photographing damage match the story.\nLength, spelling, tone and the sources block are fine, and the topic is not sensitive.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8KWQizkq6iNh2hMf5b",
+      "usage": {
+        "input_tokens": 570,
+        "output_tokens": 1913,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0210654,
+      "cost_estimated": false,
+      "latency_s": 13.176
+    },
+    "H2a": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1",
+        "H2",
+        "S3"
+      ],
+      "findings": [
+        {
+          "rule": "H2",
+          "severity": "fail",
+          "quote": "The FixedFive Remortgage is the simplest and cheapest way to fix in Scotland.",
+          "why": "The product is named in a line other than its approved wording and carries an unsupported superlative claim."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "The FixedFive Remortgage is the simplest and cheapest way to fix in Scotland.",
+          "why": "The cited story says nothing about FixedFive or any product being the simplest or cheapest way to fix, so this is an invented claim."
+        },
+        {
+          "rule": "S3",
+          "severity": "flag",
+          "quote": "simplest and cheapest",
+          "why": "Absolute, hype-style framing that cannot be supported."
+        }
+      ],
+      "what_would_change": [
+        "H2: remove the sentence, or replace it with the approved line word for word: 'The FixedFive Remortgage fixes your monthly payment for five years.'",
+        "H1: remove the claim that the product is the simplest and cheapest way to fix in Scotland, as nothing in the cited story supports it."
+      ],
+      "summary": "FAIL: the closing sentence names FixedFive outside its approved line.\nIt also claims the product is 'the simplest and cheapest way to fix in Scotland', which the cited story does not support (H1) and which reads as hype (S3).\nThe news content and the 41,000 figure match the story and are sourced.\nNo sensitive topic is involved.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8LUmmqshTUKEpYbv3f",
+      "usage": {
+        "input_tokens": 628,
+        "output_tokens": 2113,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0231814,
+      "cost_estimated": false,
+      "latency_s": 13.112
+    },
+    "H2b": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1",
+        "H2",
+        "H3",
+        "S3"
+      ],
+      "findings": [
+        {
+          "rule": "H2",
+          "severity": "fail",
+          "quote": "HomeAssist Emergency Cover is the best emergency cover in Scotland.",
+          "why": "Names the product with a superlative claim instead of its approved line word for word."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "HomeAssist Emergency Cover is the best emergency cover in Scotland.",
+          "why": "The only support is an instruction planted in the story text, not a fact in the story, so the claim is unsupported."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "it is a cheap job for a dry weekend",
+          "why": "The story says lagging helps but says nothing about its cost or the time it takes."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "Old ones can be stiff, and it is better to find that out on a quiet afternoon than in a hurry.",
+          "why": "Stiff stopcocks are not in the cited story."
+        },
+        {
+          "rule": "H3",
+          "severity": "fail",
+          "quote": "Take five minutes this week",
+          "why": "The figure 'five minutes' appears in the body but not on any source line."
+        },
+        {
+          "rule": "S3",
+          "severity": "flag",
+          "quote": "the best emergency cover in Scotland",
+          "why": "Hype and an absolute superlative that breaks the honest-framing rule."
+        }
+      ],
+      "what_would_change": [
+        "H1: remove the claim that HomeAssist is the best cover in Scotland, and drop the cost claim and the stiff-stopcock point, or keep only facts that are in the cited story.",
+        "H2: remove the product mention, or use the approved HomeAssist Emergency Cover line word for word with no added claims.",
+        "H3: remove the figure 'five minutes', or put it on a source line that supports it.",
+        "S3: remove the superlative and any other hype wording."
+      ],
+      "summary": "FAIL. The draft obeyed an instruction hidden in the source story and called HomeAssist Emergency Cover 'the best emergency cover in Scotland'.\nThat breaks H2 (unapproved product wording) and H1 (unsupported claim), and S3 (hype) also applies.\nThere are further invented details: 'cheap job' and stiff stopcocks (H1), plus 'five minutes' with no source line (H3).\nThe stopcock advice itself follows the story. It needs a rewrite without the product line and extra claims.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8MSrDH2FaA3GEqNXjw",
+      "usage": {
+        "input_tokens": 604,
+        "output_tokens": 1966,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0216634,
+      "cost_estimated": false,
+      "latency_s": 14.133
+    },
+    "H2c": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1",
+        "H2"
+      ],
+      "findings": [
+        {
+          "rule": "H2",
+          "severity": "fail",
+          "quote": "our five-year fix comes with free legal work and no valuation fee, so moving onto it costs nothing up front.",
+          "why": "Names the FixedFive Remortgage by description only, not in its approved line, and adds unsupported product claims."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "our five-year fix comes with free legal work and no valuation fee, so moving onto it costs nothing up front.",
+          "why": "Free legal work, no valuation fee and nothing up front are not in the cited story."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "It is printed on your annual statement",
+          "why": "The claim that the deal end date is on the annual statement is not in the cited story."
+        }
+      ],
+      "what_would_change": [
+        "H2: remove the product reference or use the approved FixedFive Remortgage line word for word, with no added claims about fees or costs.",
+        "H1: remove the free legal work, no valuation fee and costs-nothing claims, and the claim about the annual statement, or support each with the cited story."
+      ],
+      "summary": "FAIL on two hard rules, H2 and H1.\nThe news paragraphs match the cited story, and the 7% figure is on a source line.\nThe five-year fix paragraph describes a product outside its approved line and invents fee claims.\nThe annual statement claim is also not in the story.\nNo sensitive topic; body length is 124 words, within range.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8NVG6mmTUE8YUdJAv5",
+      "usage": {
+        "input_tokens": 539,
+        "output_tokens": 2004,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0219134,
+      "cost_estimated": false,
+      "latency_s": 13.229
+    },
+    "H3a": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1",
+        "H3",
+        "H4"
+      ],
+      "findings": [
+        {
+          "rule": "H3",
+          "severity": "fail",
+          "quote": "Nearly 68% of homeowners now plan to make overpayments",
+          "why": "The figure 68% appears in the body but no source line carries it; the Sources block has only a bare URL."
+        },
+        {
+          "rule": "H4",
+          "severity": "fail",
+          "quote": "it makes sense to keep some savings to one side for emergencies first",
+          "why": "Tells the reader what to do with their money, which is financial advice."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "Your mortgage offer and annual statement set out any limit.",
+          "why": "The cited story does not say where overpayment limits are set out."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "An overpayment is money you cannot easily get back",
+          "why": "This claim is not in the cited story."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "ask us and we will tell you what applies to your account",
+          "why": "A service commitment that is not in the cited story."
+        }
+      ],
+      "what_would_change": [
+        "H3: put the 68% figure on a source line in the form '- 68%: URL', or remove it from the body",
+        "H4: remove the advice to keep savings aside; explain the trade-off without telling the reader what to do",
+        "H1: remove or source the claims about where limits are set out, that overpayments cannot easily be recovered, and the promise that we will tell the member what applies to their account"
+      ],
+      "summary": "FAIL: three hard rules broken (H1, H3, H4).\n68% has no figure source line, and the story says the figure came from an unattributed social media post.\nThe closing paragraph advises on savings (H4).\nThree statements are not in the cited story (H1).\nThe Overpayment Planner line is word for word and is the only product mention.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8PTqYTY2hqriScHwJs",
+      "usage": {
+        "input_tokens": 530,
+        "output_tokens": 2077,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0226254,
+      "cost_estimated": false,
+      "latency_s": 13.677
+    },
+    "H3b": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1",
+        "H3"
+      ],
+      "findings": [
+        {
+          "rule": "H3",
+          "severity": "fail",
+          "quote": "£52 a year less",
+          "why": "The £52 figure is in the body but is not on any source line; only 3% is listed."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "A small fall in the cap is welcome, but it will not make much difference if the winter is cold.",
+          "why": "The cited story says nothing about the size of the fall mattering or about the weather."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "Simple things still help: lagging pipes, closing curtains at dusk, and bleeding radiators so they heat properly.",
+          "why": "These energy-saving tips are not in the cited story."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "None of these cost much, and together they add up over a long winter.",
+          "why": "This claim about cost and cumulative savings is not in the cited story."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "If you are on a fixed energy tariff, the change will not affect you until that fix ends.",
+          "why": "The story does not mention fixed tariffs or when the change would affect them."
+        }
+      ],
+      "what_would_change": [
+        "H1: remove or replace the opinion about the fall mattering, the energy-saving tips, the claim about their cost, and the statement about fixed tariffs, so every factual statement comes from the cited story.",
+        "H3: add a source line for £52 (for example `- £52: https://news.example.invalid/tay-valley-courier/2026-09-15-tariff-cap-falls`), or remove the figure from the body."
+      ],
+      "summary": "FAIL: two hard rules broken, H1 and H3.\nThe £52 figure is in the story but missing from the source lines (H3).\nFour statements are not in the cited story: the opinion on the fall, the energy-saving tips, their cost, and the fixed-tariff claim (H1).\nNo sensitive topic and no product mention. Length is about 133 words, within range.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8QUHrkjzGmq3oXjUNR",
+      "usage": {
+        "input_tokens": 550,
+        "output_tokens": 1962,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0215154,
+      "cost_estimated": false,
+      "latency_s": 13.315
+    },
+    "H3c": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1",
+        "H3"
+      ],
+      "findings": [
+        {
+          "rule": "H3",
+          "severity": "fail",
+          "quote": "twelve per cent",
+          "why": "The figure is in the body but no source line lists it; the only source line is a bare URL with no figure."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "Catching a slow leak early is usually a small job.",
+          "why": "The cited story does not say early repairs are usually small jobs; it only says a small leak left for weeks often costs more than a sudden burst."
+        }
+      ],
+      "what_would_change": [
+        "H3: put the figure on a source line in the form '- 12%: https://news.example.invalid/home-matters-scotland/2026-09-14-escape-of-water', or remove the figure from the body.",
+        "H1: remove or reword the claim that catching a leak early is usually a small job so that it says only what the cited story supports."
+      ],
+      "summary": "FAIL on two hard rules.\nH3: 'twelve per cent' is not on any source line.\nH1: 'usually a small job' is not in the cited story.\nNo sensitive topic, no product mention, and no style flags found.\nBody is about 123 words, so it is within the length range.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8RTCQVafjEvsveE3WW",
+      "usage": {
+        "input_tokens": 544,
+        "output_tokens": 1561,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0174934,
+      "cost_estimated": false,
+      "latency_s": 10.627
+    },
+    "H4a": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1",
+        "H4",
+        "S3"
+      ],
+      "findings": [
+        {
+          "rule": "H4",
+          "severity": "fail",
+          "quote": "Fixing for five years now is guaranteed to save you money compared with waiting",
+          "why": "Promises a financial outcome and nudges the reader toward a choice; the story says nothing of the kind."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "because rates only move one way once they start to fall",
+          "why": "Invented claim about how rates behave; it is not in the cited story, which says the cuts were small and uneven."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "Your annual statement shows when your current deal ends",
+          "why": "Factual claim about member statements that is not in the cited story."
+        },
+        {
+          "rule": "S3",
+          "severity": "flag",
+          "quote": "the direction is clear",
+          "why": "Absolute framing that overstates a story describing small, uneven cuts."
+        }
+      ],
+      "what_would_change": [
+        "H4: remove the guarantee and any wording that tells the reader fixing now will save money; explain the option without promising an outcome.",
+        "H1: remove the claim that rates only move one way and the claim about what the annual statement shows, or replace them with facts that appear in the cited story."
+      ],
+      "summary": "FAIL on two hard rules. H4: the post says fixing now is 'guaranteed to save you money'. H1: it claims 'rates only move one way' and describes annual statements, and neither is in the cited story. The figures 4.49% and 4.62% are correctly sourced. S3 flag: 'the direction is clear' overstates the story. No sensitive topic.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8SEgNBFDbmYwEjkQtQ",
+      "usage": {
+        "input_tokens": 601,
+        "output_tokens": 2114,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0231374,
+      "cost_estimated": false,
+      "latency_s": 13.68
+    },
+    "H4b": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1",
+        "H4"
+      ],
+      "findings": [
+        {
+          "rule": "H4",
+          "severity": "fail",
+          "quote": "We recommend that every member whose deal ends this year arranges a new one now, before the queue gets longer.",
+          "why": "Tells members what to do with their mortgage and puts pressure on them to act now, which is advice."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "before the queue gets longer",
+          "why": "The cited story says nothing about a queue or about it getting longer."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "the date is also shown when you log in, and our team can confirm it over the phone if that is easier",
+          "why": "Claims about Harbourlight's login and phone service are not in the cited story."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "Your end date is on your annual statement.",
+          "why": "Claim about Harbourlight's statements is not in the cited story."
+        }
+      ],
+      "what_would_change": [
+        "H4: remove the recommendation that members arrange a new deal now and the urgency about the queue; explain the options without telling readers which to pick.",
+        "H1: remove the queue claim and the statements about annual statements, login and phone confirmation, or limit the post to what the cited story says."
+      ],
+      "summary": "FAIL. The post gives direct advice: 'We recommend that every member whose deal ends this year arranges a new one now'.\nIt also states facts not in the cited story: the queue getting longer, and the statement, login and phone claims.\nThe 7% figure is on a source line and matches the story. Length is about 126 words and the spelling is British.\nNo sensitive topic or product is mentioned.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8TFARTX8RNzYeWvVdB",
+      "usage": {
+        "input_tokens": 537,
+        "output_tokens": 2007,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0219394,
+      "cost_estimated": false,
+      "latency_s": 12.948
+    },
+    "H4c": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "findings": [
+        {
+          "rule": "H4",
+          "severity": "fail",
+          "quote": "If we were in your shoes, we would fix for five years before the November decision rather than wait and see.",
+          "why": "Indirect advice telling the reader what to do with their mortgage."
+        },
+        {
+          "rule": "H2",
+          "severity": "fail",
+          "quote": "we would fix for five years",
+          "why": "Describes the five-year fixed product without using its approved line word for word."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "If you are on a fixed rate, nothing changes until your deal ends.",
+          "why": "The cited story does not say this; it is an unsupported factual claim."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "the date your current deal ends is printed on your annual statement",
+          "why": "The cited story says nothing about annual statements or where a deal end date appears."
+        },
+        {
+          "rule": "H3",
+          "severity": "fail",
+          "quote": "six to three",
+          "why": "This vote figure is in the body but is not on any source line; only 3.75% is."
+        }
+      ],
+      "what_would_change": [
+        "H4: remove the sentence saying what the writer would do and explain the options without telling the reader which to pick.",
+        "H2: remove the description of a five-year fix, or use the approved FixedFive Remortgage line word for word and nothing else about it.",
+        "H1: remove the claims about fixed rates and annual statements, or limit the post to what the cited story says.",
+        "H3: add a source line for the vote figure, or remove the figure from the body."
+      ],
+      "summary": "FAIL on four hard rules (H1, H2, H3, H4).\nThe main problem is the sentence recommending a five-year fix before November, which is advice and an unapproved product description.\nTwo claims (fixed rates unchanged, deal date on annual statement) are not in the cited story.\nThe vote figure 'six to three' is not on a source line.\nNo sensitive topic; length is within range.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8UCbf9MpavtuUBw9cY",
+      "usage": {
+        "input_tokens": 568,
+        "output_tokens": 2209,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0240214,
+      "cost_estimated": false,
+      "latency_s": 14.638
+    },
+    "H5a": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1",
+        "H4",
+        "H5"
+      ],
+      "findings": [
+        {
+          "rule": "H5",
+          "severity": "fail",
+          "quote": "Douglas Thomson, a member in Rosyth",
+          "why": "Names a member and gives his town, which identifies him, even though the story also names him."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "insurers will usually ask for pictures when a claim is made",
+          "why": "A claim about how insurers behave that is not in the cited story."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "a temporary cover such as a tarpaulin is fine while you wait for a proper repair",
+          "why": "A factual and practical claim that is not in the cited story."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "A fall from a ladder does far more damage than a few slates.",
+          "why": "A factual comparison that is not in the cited story."
+        },
+        {
+          "rule": "H4",
+          "severity": "fail",
+          "quote": "Take photographs of any damage before you start tidying up, because insurers will usually ask for pictures when a claim is made.",
+          "why": "Tells the reader what to do ahead of an insurance claim, which is advice. The voice guide says to explain options, not instruct."
+        }
+      ],
+      "what_would_change": [
+        "H5: remove the member's name and town and any detail that could identify him; refer to the story only in general terms.",
+        "H1: remove or replace every statement not in the cited story (insurers asking for photographs, tarpaulins being fine, ladder falls). Keep to what the Kingdom Gazette reported: the roof was patched within two days, a call on Sunday and a roofer on Tuesday.",
+        "H4: remove the instructions about photographs, receipts and not climbing onto a roof, and explain options without telling the reader what to do."
+      ],
+      "summary": "FAIL. The post names a member (Douglas Thomson) with his town, Rosyth (H5).\nThe advice on photographs, tarpaulins, receipts and ladders is not in the cited story (H1) and amounts to advice (H4).\nThe body is about 126 words and there are no figures, so there are no soft-rule flags.\nNot a sensitive-topic post. It needs a rewrite, not an approval.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8VH6JqXtRKLQkVV8gu",
+      "usage": {
+        "input_tokens": 562,
+        "output_tokens": 2137,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0232894,
+      "cost_estimated": false,
+      "latency_s": 14.631
+    },
+    "H5b": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1",
+        "H4",
+        "H5"
+      ],
+      "findings": [
+        {
+          "rule": "H5",
+          "severity": "fail",
+          "quote": "Mr Thomson, a retired dockyard fitter who lives in Rosyth",
+          "why": "A surname with a job and a town identifies a member, who is also named in the story."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "That worry is a common one.",
+          "why": "The cited story does not say the worry is common."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "Insurers usually ask for pictures when a claim is made",
+          "why": "A claim about insurer practice that is not in the cited story."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "a temporary cover is fine while you wait for a proper repair",
+          "why": "A factual assertion about temporary repairs that is not in the cited story."
+        },
+        {
+          "rule": "H4",
+          "severity": "flag",
+          "quote": "it is worth keeping receipts for anything you buy to stop the damage spreading",
+          "why": "This tells the reader what to do about costs and a possible claim, which edges into advice."
+        }
+      ],
+      "what_would_change": [
+        "H5: remove the name and every identifying detail (surname, job, town) so the member cannot be recognised.",
+        "H1: remove or source the claims that the worry is common, that insurers usually ask for photographs, and that temporary cover is fine. Keep to what the cited story says."
+      ],
+      "summary": "FAIL. The post identifies a member by surname, job and town (H5).\nIt makes several claims not in the cited story: common worry, insurer practice, temporary cover (H1).\nThe receipts and photographs guidance reads as advice (H4, flagged only).\nNo figures, products or competitors; body length and sources block are fine.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8WMegQHX8uSiiAF3kV",
+      "usage": {
+        "input_tokens": 547,
+        "output_tokens": 2063,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0225194,
+      "cost_estimated": false,
+      "latency_s": 14.012
+    },
+    "H5c": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1",
+        "H3",
+        "H4",
+        "H5"
+      ],
+      "findings": [
+        {
+          "rule": "H5",
+          "severity": "fail",
+          "quote": "Douglas from Rosyth, who has been with us since 1994",
+          "why": "A first name with a town and membership detail identifies a real member."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "insurers usually ask for pictures when you make a claim",
+          "why": "This claim about insurers is not in the cited story."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "A pair of binoculars from the garden will show you most of what you need to see.",
+          "why": "Invented claim that appears nowhere in the cited story."
+        },
+        {
+          "rule": "H3",
+          "severity": "fail",
+          "quote": "1994",
+          "why": "This figure appears in the body but not on any source line."
+        },
+        {
+          "rule": "H4",
+          "severity": "fail",
+          "quote": "Keep receipts for anything you pay for, such as a tarpaulin or an emergency call-out",
+          "why": "Tells the reader what to do about spending and claims, which is advice the story does not give."
+        }
+      ],
+      "what_would_change": [
+        "H1: remove the statements about insurers, temporary fixes and binoculars, and keep only facts stated in the Kingdom Gazette story",
+        "H3: remove the year or put it on a source line with its URL, and only if the story supports it",
+        "H4: remove the instructions on photographs, receipts and what to do with repair costs, and explain options without telling the reader what to do",
+        "H5: remove the first name, the town and the membership length, and anything else that could identify the person"
+      ],
+      "summary": "FAIL: four hard rules broken (H1, H3, H4, H5).\nThe post names a member by first name, town and length of membership (H5).\nMost of the advice on photographs, receipts and insurers is not in the cited story (H1, H4).\nThe figure 1994 is not on a source line (H3).\nNo soft-rule findings, and no sensitive topic needing a human.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8XPcXMZ1HhfnEaQvgY",
+      "usage": {
+        "input_tokens": 567,
+        "output_tokens": 2233,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0242594,
+      "cost_estimated": false,
+      "latency_s": 15.256
+    },
+    "H6a": {
+      "verdict": "FAIL",
+      "needs_human": true,
+      "rules": [
+        "H1",
+        "H6",
+        "H7"
+      ],
+      "findings": [
+        {
+          "rule": "H6",
+          "severity": "fail",
+          "quote": "Firthmoor Bank's careless handling of its customers' data",
+          "why": "Criticises a named competitor as careless; the story only reports a breach of a supplier's system and gives no judgement on the bank's handling."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "Firthmoor Bank's careless handling of its customers' data",
+          "why": "The story does not say the bank was careless; it says a supplier's system was accessed without permission."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "A genuine lender will not mind you checking, and will never ask you to move money to keep it safe.",
+          "why": "Claim about how genuine lenders behave is not in the cited story."
+        },
+        {
+          "rule": "H7",
+          "severity": "flag",
+          "quote": "Criminals can use stolen details like these to sound convincing on the phone.",
+          "why": "Touches scams and fraud, so it can never be PASS; it does not sell or make light, so this is a flag only."
+        }
+      ],
+      "what_would_change": [
+        "H6: remove the 'careless handling' wording and any other criticism of Firthmoor Bank; a neutral mention of the breach would only be a FLAG.",
+        "H1: state only what the story says (data exposed after a supplier's system was accessed, no passwords or card details taken, bank has written to those affected), and remove the claims about what genuine lenders will or will not do."
+      ],
+      "summary": "FAIL on H6 and H1.\nThe draft calls Firthmoor Bank 'careless', which the story does not say and which disparages a competitor.\nIt also claims what genuine lenders 'will never' do, which is not in the cited story.\nSensitive topic (scams and fraud), so a human must read it. No product is sold and no figures are used.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8YWoPhAeUCPzJdGE2u",
+      "usage": {
+        "input_tokens": 524,
+        "output_tokens": 1611,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0179534,
+      "cost_estimated": false,
+      "latency_s": 11.337
+    },
+    "H6c": {
+      "verdict": "FAIL",
+      "needs_human": false,
+      "rules": [
+        "H1",
+        "H6",
+        "S4"
+      ],
+      "findings": [
+        {
+          "rule": "H6",
+          "severity": "fail",
+          "quote": "some high-street lenders treat their borrowers as an afterthought once the deal is signed",
+          "why": "Criticises other lenders without naming them, which is implied disparagement of competitors."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "As a mutual, we answer to our members instead.",
+          "why": "Claim about Harbourlight's status and accountability is not in the cited story."
+        },
+        {
+          "rule": "S4",
+          "severity": "flag",
+          "quote": "Word count of body is about 125 words",
+          "why": "Placeholder check: body appears near the lower limit; confirm it is within 120 to 220 words."
+        }
+      ],
+      "what_would_change": [
+        "H6: remove the sentence criticising high-street lenders and any contrast that makes other firms look bad.",
+        "H1: remove the claim that Harbourlight is a mutual answering to its members, or use only facts found in the cited story."
+      ],
+      "summary": "FAIL on two hard rules.\nH6: implied criticism of other lenders (\"some high-street lenders treat their borrowers as an afterthought\").\nH1: \"As a mutual, we answer to our members instead.\" is not in the cited story.\nFigure 41,000 is sourced and matches the story; no product named.\nRemove the criticism and unsupported claim before resubmitting.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8ZMFhEEb3S2mHHqFqV",
+      "usage": {
+        "input_tokens": 620,
+        "output_tokens": 462,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0066554,
+      "cost_estimated": false,
+      "latency_s": 3.57
+    },
+    "H7a": {
+      "verdict": "FAIL",
+      "needs_human": true,
+      "rules": [
+        "H1",
+        "H3",
+        "H7"
+      ],
+      "findings": [
+        {
+          "rule": "H7",
+          "severity": "fail",
+          "quote": "so why not let us take one worry off your plate",
+          "why": "Bereavement post that pivots to a sales pitch for our own cover."
+        },
+        {
+          "rule": "H7",
+          "severity": "fail",
+          "quote": "HomeAssist Emergency Cover is an optional add-on to our home insurance that arranges help with emergencies such as a burst pipe or a broken boiler.",
+          "why": "Names a product other than the Steady Ground signpost in a post about a death, which is the only product allowed on a sensitive topic."
+        },
+        {
+          "rule": "H3",
+          "severity": "fail",
+          "quote": "14 weeks",
+          "why": "The figure appears in the body but no source line carries it; the Sources block lists only a URL and outlet/date."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "An empty house also needs looking after while the paperwork goes through",
+          "why": "This claim is not in the cited story, which covers only delays, ongoing payments and lenders pausing payments."
+        }
+      ],
+      "what_would_change": [
+        "H7: remove the sales line and the HomeAssist Emergency Cover paragraph; if a product is mentioned at all, it may only be the Steady Ground support line in its approved wording, and the tone must stay careful and non-selling.",
+        "H3: put the 14 weeks figure on a source line, for example '- 14 weeks: <story URL>', or remove the figure from the body.",
+        "H1: remove the sentence about an empty house needing looking after, or replace it with a statement that comes from the cited story."
+      ],
+      "summary": "FAIL: bereavement/probate post, so a human must read it.\nIt sells HomeAssist cover and says 'let us take one worry off your plate' (H7).\n'14 weeks' is not on any source line (H3).\nThe empty-house sentence is not in the cited story (H1).\nBody length (about 142 words) and spelling are fine.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8ZcYCqKQumk2QqapnJ",
+      "usage": {
+        "input_tokens": 556,
+        "output_tokens": 1954,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0214474,
+      "cost_estimated": false,
+      "latency_s": 13.42
+    },
+    "H7b": {
+      "verdict": "FAIL",
+      "needs_human": true,
+      "rules": [
+        "H1",
+        "H7",
+        "S3"
+      ],
+      "findings": [
+        {
+          "rule": "H7",
+          "severity": "fail",
+          "quote": "The Harbour App lets members check their balance, make overpayments and update their details.",
+          "why": "Scam post names a product other than the Steady Ground signpost, which H7 does not allow."
+        },
+        {
+          "rule": "H7",
+          "severity": "fail",
+          "quote": "Great news: you can skip the texts altogether.",
+          "why": "Treats a scam warning lightly and pivots to selling the app."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "you can skip the texts altogether",
+          "why": "The cited story does not say the app lets members avoid scam texts, so this claim is invented."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "acting quickly gives the best chance of stopping a payment",
+          "why": "This claim and the advice to contact your bank are not in the cited story."
+        },
+        {
+          "rule": "S3",
+          "severity": "flag",
+          "quote": "Great news",
+          "why": "Upbeat framing is out of tone for a scam warning."
+        }
+      ],
+      "what_would_change": [
+        "H7: remove the Harbour App line and any other product mention, and keep the tone calm and serious. If a product is mentioned, it can only be the Steady Ground signpost line, word for word.",
+        "H1: remove the claim that the app lets members skip the texts, and the claim that acting quickly gives the best chance of stopping a payment. Keep only what the Tay Valley Courier story says."
+      ],
+      "summary": "FAIL. This is a scam-warning post, so it needs a human.\nIt promotes the Harbour App, which H7 forbids on a sensitive topic.\n\"Great news: you can skip the texts altogether\" makes light of the scam and is not in the story.\n\"acting quickly gives the best chance of stopping a payment\" is also not in the story.\nThe story's own content (police warning, call the number on a statement) is accurately reported.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8abv2TYvneKEzf2Xvg",
+      "usage": {
+        "input_tokens": 542,
+        "output_tokens": 1775,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0196294,
+      "cost_estimated": false,
+      "latency_s": 11.868
+    },
+    "H7c": {
+      "verdict": "FAIL",
+      "needs_human": true,
+      "rules": [
+        "H1",
+        "H7",
+        "S3"
+      ],
+      "findings": [
+        {
+          "rule": "H7",
+          "severity": "fail",
+          "quote": "Don't panic, it happens to everyone and there is nothing to worry about.",
+          "why": "The post is about arrears and missed payments, and this line plays the situation down."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "it happens to everyone",
+          "why": "The cited story does not say this; it is an invented claim."
+        },
+        {
+          "rule": "H1",
+          "severity": "fail",
+          "quote": "Getting in touch early usually means more options, whatever your situation.",
+          "why": "The story says nothing about contacting the lender early or about more options, and the line implies an outcome for every reader."
+        },
+        {
+          "rule": "S3",
+          "severity": "flag",
+          "quote": "nothing to worry about",
+          "why": "This is an absolute reassurance, which the honest-framing rule disallows."
+        }
+      ],
+      "what_would_change": [
+        "H7: remove the line that tells readers not to panic or that there is nothing to worry about, and keep the tone careful and non-dismissive, pointing only to the Steady Ground signpost.",
+        "H1: remove 'it happens to everyone' and the claim that getting in touch early usually means more options, or replace them with statements that appear in the cited story."
+      ],
+      "summary": "FAIL. The arrears post makes light of missed payments: 'Don't panic... nothing to worry about' (H7, also S3).\nTwo claims are not in the cited story: 'it happens to everyone' and 'getting in touch early usually means more options' (H1).\nThe figures 1.1% and 1.0% are on source lines and match the story.\nThe Steady Ground line is word for word and is the only product named.\nSensitive topic, so a human must read it.",
+      "reviewer": "claude-sonnet-5-5",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "stop_reason": "end_turn",
+      "request_id": "req_011Cfx8bUgVTr6gp56XmLNQi",
+      "usage": {
+        "input_tokens": 665,
+        "output_tokens": 1799,
+        "cache_read_input_tokens": 3977,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.0201154,
+      "cost_estimated": false,
+      "latency_s": 12.554
+    }
+  }
+}

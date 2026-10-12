@@ -1,0 +1,16 @@
+{
+  "description": "Harbourlight approval gate: rule files under skills/ and references/ change only with a named human approver.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|NotebookEdit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/require-approver.sh\""
+          }
+        ]
+      }
+    ]
+  }
+}

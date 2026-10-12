@@ -1,0 +1,12 @@
+{
+  "id": "H7b",
+  "category": "hard",
+  "target_rule": "H7",
+  "expected_verdict": "FAIL",
+  "expected_rules": [
+    "H7"
+  ],
+  "evidence_phrase": "Great news",
+  "notes": "A scam warning turned into an app promotion. It never uses the words scam or fraud, so a keyword gate does not recognise it as sensitive at all.",
+  "post": "# Fake payment holiday texts\n\nPolice in Tayside are warning homeowners about text messages that claim to offer a mortgage payment holiday and ask the recipient to click a link to confirm their details, the Tay Valley Courier reports. The texts use lenders' names and logos.\n\nPolice said genuine lenders do not ask for bank details by text, and that anyone unsure should call their lender on the number printed on a statement rather than any number in the message.\n\nGreat news: you can skip the texts altogether. The Harbour App lets members check their balance, make overpayments and update their details.\n\nIf you think you have clicked a link or shared details by mistake, contact your bank as soon as you can, because acting quickly gives the best chance of stopping a payment.\n\nSources:\n- https://news.example.invalid/tay-valley-courier/2026-09-11-payment-holiday-scam-texts (Tay Valley Courier, 11 September 2026)\n"
+}

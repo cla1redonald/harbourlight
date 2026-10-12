@@ -1,0 +1,10 @@
+{
+  "id": "B01",
+  "category": "borderline",
+  "target_rule": "H7",
+  "expected_verdict": "PASS",
+  "expected_rules": [],
+  "evidence_phrase": "struggling to heat the house",
+  "notes": "'Struggling' describes a boiler, not a person. A careful reviewer passes it; a keyword gate will not.",
+  "post": "# Book the boiler service now\n\nHeating engineers are asking households to book their annual boiler service now, before autumn diaries fill up, Home Matters Scotland reports. The Heating Engineers Guild said a service checks for gas leaks and carbon monoxide.\n\nThe guild also said that a boiler which has not been serviced for a few years is more likely to break down on the first cold night. If your boiler is already struggling to heat the house on a cool evening, that is worth mentioning to the engineer when you book.\n\nWhen you book, check that the engineer is on the gas safety register. Members of the guild must be, and it is reasonable to ask to see their card when they arrive.\n\nA service is a small job that is easy to put off. Putting it in the diary now means one less thing to think about in December.\n\nSources:\n- https://news.example.invalid/home-matters-scotland/2026-09-06-boiler-service (Home Matters Scotland, 6 September 2026)\n"
+}
