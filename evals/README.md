@@ -1,6 +1,6 @@
 # Evals
 
-The code in this folder measures the compliance reviewer, and it scores two kinds. The rule-based stand-in is there to test the harness itself. The live reviewer runs on Claude, and was first recorded on 12 October 2026 with one pass each on Haiku 5.5 and Sonnet 5.5 plus five Haiku repeats. The main README has the headline numbers, and `results/report-2026-10-12.md` has all of them.
+The code in this folder scores two kinds of compliance reviewer. The rule-based stand-in is there to test the harness itself. The live reviewer runs on Claude, and was first recorded on 12 October 2026 with one pass each on Haiku 5.5 and Sonnet 5.5 plus five Haiku repeats. The main README has the headline numbers, and `results/report-2026-10-12.md` has all of them.
 
 ## What is here
 
@@ -48,11 +48,11 @@ For each hard rule, one case is written so that no pattern can catch it. They ar
 
 ## What they cannot support
 
-- A general claim about Claude. The live runs show how two models did on these 24 posts with this prompt. Haiku and Sonnet are within noise of each other here, and the verdicts on clean and borderline posts change from run to run.
-- A miss rate for real posts. The stand-in's 65% hard-rule catch rate comes mostly from how the cases were written, since one case per rule was designed to beat pattern matching. It shows the cases work as intended and says nothing about how often posts like that occur.
-- Fine comparisons. With 24 cases, an agreement of 15 out of 24 has a 95% interval of roughly 43% to 79%, so a small difference between two reviewers on this set means nothing.
-- Independent labels. The rules, the posts and the labels were all written by one person. A second labeller is still to come, and `labels/second-labeller-template.md` sets out how that will work.
-- Consistency, from the stand-in alone. Its variance fixtures show 0 changes across five runs only because the stand-in is deterministic. A model is not, which is why the variance script exists. `make live` records five Haiku repeats under `results/variance/`, and the script reports how often the verdicts and the cited rule sets changed, and how many cases agreed on both in every repeat.
+- They say nothing general about Claude. The live runs show how two models did on these 24 posts with this prompt. Haiku and Sonnet are within noise of each other here, and the verdicts on clean and borderline posts change from run to run.
+- They give no miss rate for real posts. The stand-in's 65% hard-rule catch rate comes mostly from how the cases were written, since one case per rule was designed to beat pattern matching. It shows the cases work as intended and says nothing about how often posts like that occur.
+- They can't separate two reviewers that are close. With 24 cases, an agreement of 15 out of 24 has a 95% interval of roughly 43% to 79%, so a small difference between two reviewers on this set means nothing.
+- The labels are not independent. The rules, the posts and the labels were all written by one person. A second labeller is still to come, and `labels/second-labeller-template.md` sets out how that will work.
+- The stand-in alone says nothing about consistency. Its variance fixtures show 0 changes across five runs only because the stand-in is deterministic. A model is not, which is why the variance script exists. `make live` records five Haiku repeats under `results/variance/`, and the script reports how often the verdicts and the cited rule sets changed, and how many cases agreed on both in every repeat.
 
 ## Commands
 

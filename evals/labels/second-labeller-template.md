@@ -36,7 +36,7 @@ P02,PASS,,,
 - `verdict` is PASS, FLAG or FAIL, as the checklist defines them.
 - `rules` lists every rule id that applies, separated by spaces (`H6 H7`). Leave it empty for a PASS.
 - `quote` is the phrase that mainly decided the verdict, copied exactly.
-- Label from the checklist as it is written. Where it is unclear, make a choice and say so in `notes`. Those notes show where the checklist needs rewriting.
+- Label from the checklist as it is written. Where it is unclear, make a choice and say so in `notes`. Those notes show where the checklist may need rewriting.
 
 ## How agreement is computed
 
@@ -44,7 +44,7 @@ P02,PASS,,,
 python3 evals/labels/agreement.py score evals/labels/second-labeller.csv --key blind-pack/key.json
 ```
 
-- Verdict agreement is Cohen's kappa over the three verdicts, with the raw percentage beside it. Kappa allows for the agreement two people would reach by chance, given how often each of them uses each verdict, and is worked out as kappa = (observed - expected) / (1 - expected).
+- Verdict agreement is Cohen's kappa over the three verdicts, with the raw percentage beside it. Kappa corrects for the agreement two people would reach by chance, given how often each of them uses each verdict, and is worked out as kappa = (observed - expected) / (1 - expected).
 - For each hard rule, the script gives kappa on "applies or not" across the 24 posts. It also gives the Jaccard overlap of the two rule sets for each post.
 - It then lists every post where the verdicts differ, with both labels and both quotes, for the two labellers to talk through.
 

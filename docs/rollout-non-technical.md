@@ -48,13 +48,13 @@ Don't switch the automation on from day one. Each stage below has an exit test, 
 ### Crawl: manual runs (weeks 1 to 2)
 
 - One person (in the demo, Isla Drummond, Content Editor) types `/content-run` once a day and reads every step.
-- Compliance (Morag Baird) keeps reviewing every post as now, alongside the reviewer, and notes each place where Morag and the reviewer disagree.
+- Compliance (Morag Baird) keeps reviewing every post as she does now, alongside the reviewer, and notes where she and the reviewer disagree.
 - The exit test is ten runs in which no FAIL was ever approved, with every disagreement between Morag and the reviewer talked through.
 
 ### Walk: a scheduled daily draft (weeks 3 to 6)
 
 - A scheduled task does the research, drafting and review each morning. Nothing is approved automatically. Drafts and their verdicts wait in `data/posts/` until a person looks at them.
-- In Cowork, use its scheduled tasks feature. In Claude Code, your administrator can run it on a timer. There is also a hosted schedule for Claude Managed Agents in `agents/harbourlight-daily/`, which runs on weekdays at 07:00 with a $1 limit per run and queues nothing until a named person confirms. It has run only once, as a test on 12 October 2026, so ask your administrator before relying on it.
+- In Cowork, use its scheduled tasks feature. In Claude Code, your administrator can run it on a timer. There is also a hosted schedule for Claude Managed Agents in `agents/harbourlight-daily/`, which runs on weekdays at 07:00 with a $1 limit per run and queues nothing until a named person confirms. It has run once, as a test on 12 October 2026; ask your administrator before relying on it.
 - Move on after a month of drafts that the approver rarely needs to edit, with a monthly report that shows no exceptions.
 
 ### Run: scheduled with an approval queue
@@ -68,7 +68,7 @@ Don't switch the automation on from day one. Each stage below has an exit test, 
 1. Read the quote. Every finding names a rule (H1 to H7 are hard rules) and quotes the exact words that caused it.
 2. Read "what would change", which tells you what has to be different for the post to pass.
 3. Either ask Claude to rewrite the post (it gets two tries) or reject it. **A FAIL cannot be approved**, and the audit script will refuse to log it if you try.
-4. If you think the reviewer is wrong, reject the post anyway and write down why. The feedback analyst reads rejections, so a rule that keeps catching good posts gets noticed and can be changed through the proper route.
+4. If you think the reviewer is wrong, reject the post anyway and write down why. The feedback analyst reads rejections, so a rule that keeps catching good posts gets noticed and can be changed with `/voice-apply`.
 
 ## When the reviewer says FLAG
 

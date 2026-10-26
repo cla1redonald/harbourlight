@@ -4,7 +4,7 @@ A marketing team at a regulated company wants to post about what is in the news.
 
 **Everything here is invented.** Harbourlight Mutual and its regulator, the Conduct Standards Authority, were made up for this demo, and so were the people, the products, the news stories, the outlets and every figure. The URLs use the reserved `example.invalid` domain and go nowhere.
 
-It also shows how to roll Claude Cowork out to people who don't write code. The whole pipeline installs as a plugin, and the [rollout guide](docs/rollout-non-technical.md) is written for a marketing or compliance lead.
+The repo is also a worked example of rolling Claude Cowork out to people who don't write code. The whole pipeline installs as a plugin, and the [rollout guide](docs/rollout-non-technical.md) is written for a marketing or compliance lead.
 
 ## Run the demo in a minute
 
@@ -54,11 +54,11 @@ To use the pipeline itself, open the folder in Claude Code with `claude --plugin
 - The approval gate is a shell script rather than an instruction in a prompt. A PreToolUse hook blocks any change to `references/` or `skills/` until a person has named themselves as approver, and Claude cannot create the approval marker itself. ([0002](docs/design/0002-named-approver-and-version-bump.md))
 - Only one script writes to the audit log, and it only ever appends. It refuses any row that breaks the rules, such as a FAIL marked approved or a decision with no name on it. A test checks that the seeded rows have never been altered.
 - Each rule change bumps `voice_version` and names its approver in the changelog. Every audit row records the version the post was judged under.
-- The cheap check runs first. The deterministic checker catches the mechanical failures before the model reviewer looks for the ones that need judgement. ([0003](docs/design/0003-deterministic-checker-first.md))
+- The deterministic checker runs first because it is cheap, and catches the mechanical failures before the model reviewer looks for the ones that need judgement. ([0003](docs/design/0003-deterministic-checker-first.md))
 
 ## What is tested
 
-There are 166 Python unit tests and 11 Node tests. On the Python side, every checker rule has a poison sample and a clean sample, and the approval hook is tested the way Claude Code runs it. The rest cover the audit and reset scripts, the eval harness, the cost ledger and its hard stop, the live reviewer against a fake API client, the comparison report, the variance script, the second-labeller tools, the Managed Agents orchestrator against a fake client and a stub MCP server, the deny-list script and the integrity of the seed data. The Node tests drive the policy server over a real stdio transport. They check that its checker gives the same answer as the Python one on all 24 cases and the five seeded posts.
+There are 168 Python unit tests and 11 Node tests. On the Python side, every checker rule has a poison sample and a clean sample, and the approval hook is tested the way Claude Code runs it. The rest cover the audit and reset scripts, the eval harness, the cost ledger and its hard stop, the live reviewer against a fake API client, the comparison report, the variance script, the second-labeller tools, the Managed Agents orchestrator against a fake client and a stub MCP server, the deny-list script and the integrity of the seed data. The Node tests drive the policy server over a real stdio transport. They check that its checker gives the same answer as the Python one on all 24 cases and the five seeded posts.
 
 ### The stand-in reviewer
 
@@ -109,13 +109,13 @@ Both models caught the eight cases the stand-in missed or under-called, which ar
 | Cases where every repeat agreed on verdict and rules | 4 of 24 |
 | Individual verdicts matching the case's most common verdict | 114 of 120 |
 
-Every post that breaks a hard rule got FAIL in all five repeats. The verdicts that moved were on the clean and borderline posts, which swung between PASS, FLAG and FAIL on H1. The rules cited alongside the right one moved as well, with an extra H1 or H4 turning up in some repeats and not in others. Across all six Haiku passes, agreement ranged from 21 to 23 of 24, and false positives on the two clean posts from 0 to 2, so the single pass in the table above was one of the better runs. In one repeat Haiku failed H6a without citing H6, which brought its catch count for that run to 19 of 20. When one run says FAIL, you can rely on it. On a clean post, one run on its own is not enough.
+Every post that breaks a hard rule got FAIL in all five repeats. The verdicts that moved were on the clean and borderline posts, which swung between PASS, FLAG and FAIL on H1. The rules cited alongside the right one moved as well, with an extra H1 or H4 turning up in some repeats and not in others. Across all six Haiku passes, agreement ranged from 21 to 23 of 24, and false positives on the two clean posts from 0 to 2, so the single pass in the table above was one of the better runs. In one repeat Haiku failed H6a without citing H6, which brought its catch count for that run to 19 of 20. On a post that breaks a hard rule, one run was enough, because every repeat gave FAIL. On a clean or borderline post, one run on its own is not enough.
 
 These numbers have limits. With only 24 cases the intervals are wide, and most differences between reviewers are noise. One person wrote the rules, the posts and the labels, so agreement here means agreement with that person. And because one case per rule was built to beat pattern matching, the catch rates describe this set of cases. They don't tell you how often posts like these turn up in real life.
 
 Each response was priced at list rates and recorded in [evals/results/spend.jsonl](evals/results/spend.jsonl). There are 171 rows, coming to $0.69 in total. The Sonnet pass cost $0.51, the six Haiku passes and a two-post smoke test cost $0.14 between them, and the Managed Agents session cost $0.05. The code stops itself once spending passes $50.
 
-Nobody else has labelled the cases yet. [evals/labels/second-labeller-template.md](evals/labels/second-labeller-template.md) explains how a second person can label them blind and how agreement between the two will be measured with Cohen's kappa. A model will deliberately not stand in for that person.
+Nobody else has labelled the cases yet. [evals/labels/second-labeller-template.md](evals/labels/second-labeller-template.md) explains how a second person can label them blind and how agreement between the two will be measured with Cohen's kappa. A model won't be used in their place, because two machines agreeing would not show whether the labels are right.
 
 [evals/README.md](evals/README.md) has the detail.
 
@@ -148,9 +148,9 @@ Other clients use the same command (`node .../dist/src/index.js`) in their stdio
 - `environment.yaml` sets limited networking with an explicit host list that is empty.
 - `deployment-daily.yaml` schedules the run for 07:00 Europe/London on weekdays, with a $1 budget on every session.
 
-`scripts/managed_daily.py` does the rest. It creates the agent and the environment once, then starts each session with the $1 budget set at creation. It answers the agent's tool calls and stops for a named person before anything goes into the approval queue. At the end it exports the event log to `evals/results/managed-run-<date>.json` and writes a morning-after report of what was drafted and queued.
+`scripts/managed_daily.py` does the rest. It creates the agent and the environment once, then starts each session with the $1 budget set at creation. It answers the agent's tool calls and pauses for a named person before anything goes into the approval queue. At the end it exports the event log to `evals/results/managed-run-<date>.json` and writes a morning-after report of what was drafted and queued.
 
-It has run once, on 12 October 2026. Managed Agents accepted the account, and `setup` created the environment (limited networking, empty host list) and the agent. One session then ran on seed story S02 with its $1 budget. The agent called six tools (`get_new_stories`, `get_voice_rules`, `get_checklist`, `list_approved_claims`, `check_post`, `queue_for_approval`) and drafted a 184-word post with no product line, which the orchestrator's own `check_post` passed. The run stopped at the queue write and showed the draft with its SHA-256. **No person answered that pause.** The build agent answered it, as its instructions told it to, in the name of the fictional approver Euan Lennie and with the hash. The draft was queued, and the session ended normally after 92 seconds, 18.5 of them active. At list prices it cost 5 cents against the $1 budget. The event log is [evals/results/managed-run-2026-10-12.json](evals/results/managed-run-2026-10-12.json), with the morning-after report next to it. The agent got one thing wrong. It dated its report 4 September 2026, the story's date, when it should have used the date of the run.
+It has run once, on 12 October 2026. Managed Agents accepted the account, and `setup` created the environment (limited networking, empty host list) and the agent. One session then ran on seed story S02 with its $1 budget. The agent called six tools (`get_new_stories`, `get_voice_rules`, `get_checklist`, `list_approved_claims`, `check_post`, `queue_for_approval`) and drafted a 184-word post with no product line, which the orchestrator's own `check_post` passed. The run paused at the queue write and showed the draft with its SHA-256. **No person answered that pause.** The build agent answered it, as its instructions told it to, in the name of the fictional approver Euan Lennie and with the hash. The draft was queued, and the session ended normally after 92 seconds, 18.5 of them active. At list prices it cost 5 cents against the $1 budget. The event log is [evals/results/managed-run-2026-10-12.json](evals/results/managed-run-2026-10-12.json), with the morning-after report next to it. The agent got one thing wrong. It dated its report 4 September 2026, the story's date, when it should have used the date of the run.
 
 To run another session:
 
@@ -159,7 +159,7 @@ pip install -r requirements-live.txt && make policy-server
 python3 scripts/managed_daily.py run --story S03 --approver "Your Name" --answer-file approval.json
 ```
 
-The run stops at the queue write and saves the draft, the orchestrator's check and the post hash to `approval.json.pending.json`. To answer, write `approval.json` as `{"decision": "approve", "approver": "Your Name", "post_sha256": "<first 12 or more characters>"}`. You can preset the answer with `--decision approve`, but that also needs `--post-sha256` and only covers one queue call. If the orchestrator's own checker gives a FAIL, the post is never queued, whatever the agent says.
+The run pauses at the queue write and saves the draft, the orchestrator's check and the post hash to `approval.json.pending.json`. To answer, write `approval.json` as `{"decision": "approve", "approver": "Your Name", "post_sha256": "<first 12 or more characters>"}`. You can preset the answer with `--decision approve`, but that also needs `--post-sha256` and only covers one queue call. If the orchestrator's own checker gives a FAIL, the post is never queued, whatever the agent says.
 
 A scheduled run has no client attached, so it waits at its first tool call until someone runs `managed_daily.py attach`. In production a webhook would answer it, and that part is not built here. ([0005](docs/design/0005-phase-2b.md), items 15 to 20)
 

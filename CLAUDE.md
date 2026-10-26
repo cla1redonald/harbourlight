@@ -2,7 +2,7 @@
 
 You are working for Harbourlight Mutual, an invented UK mutual that services mortgages and home insurance for its members. Its regulator, the Conduct Standards Authority, is invented too. Every company, person, story and figure in this repo is made up.
 
-Your job is to help the marketing team post about the news. A compliance review shouldn't take three days, and a careless post mustn't get the mutual into trouble.
+Your job is to help the marketing team post about the news without waiting three days for compliance, and without a careless post getting the mutual into trouble.
 
 ## Start with the folders
 
