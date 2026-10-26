@@ -54,7 +54,7 @@ Don't switch the automation on from day one. Each stage below has an exit test, 
 ### Walk: a scheduled daily draft (weeks 3 to 6)
 
 - A scheduled task does the research, drafting and review each morning. Nothing is approved automatically. Drafts and their verdicts wait in `data/posts/` until a person looks at them.
-- In Cowork, use its scheduled tasks feature. In Claude Code, your administrator can run it on a timer. There is also a hosted schedule for Claude Managed Agents in `agents/harbourlight-daily/`, which runs on weekdays at 07:00 with a $1 limit per run and queues nothing until a named person confirms. It has run once, as a test on 12 October 2026; ask your administrator before relying on it.
+- In Cowork, use its scheduled tasks feature. In Claude Code, your administrator can run it on a timer. There is also a hosted schedule for Claude Managed Agents in `agents/harbourlight-daily/`, which runs on weekdays at 07:00 with a $1 limit per run and queues nothing until a named person confirms. It has run once, as a test on 12 October 2026. Ask your administrator before relying on it.
 - Move on after a month of drafts that the approver rarely needs to edit, with a monthly report that shows no exceptions.
 
 ### Run: scheduled with an approval queue
